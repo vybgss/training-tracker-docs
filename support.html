@@ -1,110 +1,828 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Training Tracker - Support</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 0 40px;
-        line-height: 1.6;
-        color: #333;
-      }
-      h1 {
-        text-align: center;
-        margin-bottom: 50px;
-        color: #1a73e8;
-      }
-      h2 {
-        color: #333;
-        margin-top: 40px;
-      }
-      p {
-        margin-bottom: 20px;
-      }
-      a {
-        color: #1a73e8;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      ul li {
-        background: #f9f9f9;
-        padding: 10px;
-        margin-bottom: 10px;
-        border-left: 4px solid #1a73e8;
-      }
-      .top-text {
-        font-style: italic;
-        margin-bottom: 50px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Training Tracker - Support</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F2F2F7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+  <title>Support · Training Tracker</title>
+  <meta name="description" content="Answers to common questions about Training Tracker and how to contact the developer.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js"></script>
+</head>
+<body>
+  <div class="l10n" data-title hidden>
+    <span lang="en">Support · Training Tracker</span>
+    <span lang="de">Support · Training Tracker</span>
+    <span lang="fr">Assistance · Training Tracker</span>
+    <span lang="uk">Підтримка · Training Tracker</span>
+    <span lang="es">Soporte · Training Tracker</span>
+    <span lang="ja">サポート · Training Tracker</span>
+    <span lang="pt">Suporte · Training Tracker</span>
+  </div>
 
-    <p class="top-text">
-      Need help with the Training Tracker app or have questions about its features? You’re in the right place. Below, you’ll find answers to frequently asked questions and ways to contact us for further assistance. We’re here to ensure you get the most out of Training Tracker.
-    </p>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand display" href="marketing.html">
+        <picture>
+          <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="assets/app-icon.png" alt="" width="32" height="32">
+        </picture>
+        <span>Training Tracker</span>
+      </a>
+      <nav class="nav">
+        <a href="marketing.html" class="l10n"><span lang="en">Overview</span><span lang="de">Überblick</span><span lang="fr">Aperçu</span><span lang="uk">Огляд</span><span lang="es">Resumen</span><span lang="ja">概要</span><span lang="pt">Visão geral</span></a>
+        <a href="support.html" class="l10n" aria-current="page"><span lang="en">Support</span><span lang="de">Support</span><span lang="fr">Assistance</span><span lang="uk">Підтримка</span><span lang="es">Soporte</span><span lang="ja">サポート</span><span lang="pt">Suporte</span></a>
+        <a href="privacy-policy.html" class="l10n"><span lang="en">Privacy</span><span lang="de">Datenschutz</span><span lang="fr">Confidentialité</span><span lang="uk">Конфіденційність</span><span lang="es">Privacidad</span><span lang="ja">プライバシー</span><span lang="pt">Privacidade</span></a>
+      </nav>
+      <label class="lang-picker">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>
+        <select id="language" aria-label="Language">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="uk">Українська</option>
+          <option value="es">Español</option>
+          <option value="ja">日本語</option>
+          <option value="pt">Português</option>
+        </select>
+        <svg class="icon chevron" aria-hidden="true"><use href="assets/icons.svg#chevron-down"/></svg>
+      </label>
+    </div>
+  </header>
 
-    <h2>Frequently Asked Questions (FAQ)</h2>
-    <ul>
-      <li>
-        <strong>1. How do I add a new workout?</strong><br />
-        Tap the "+" button on the main screen, enter a unique name for your workout, and tap "Add Workout." Your workout will appear in the list.
-      </li>
+  <main class="wrap narrow l10n">
 
-      <li>
-        <strong>2. How can I record my results?</strong><br />
-        Select a workout from the list, tap "+" to add result, enter your weight and repetitions, choose kg or lb, and save. Results are automatically sorted by date.
-      </li>
+    <!-- English -->
+    <article lang="en">
+      <header class="page-head">
+        <h1 class="display">Support</h1>
+        <p class="lead">Answers to common questions about Training Tracker, and how to reach the developer.</p>
+      </header>
 
-      <li>
-        <strong>3. Does the app sync across devices?</strong><br />
-        Yes. Training Tracker uses iCloud to automatically sync your data across devices. Sync happens immediately after changes, or every 30 seconds while the app is active.
-      </li>
+      <section class="section">
+        <div class="card contact">
+          <span class="tile lg c-accent"><svg class="icon"><use href="assets/icons.svg#mail"/></svg></span>
+          <div class="text">
+            <strong class="display">Get in touch</strong>
+            <span class="secondary">Questions, problems or ideas? Send an email and mention your iPhone model, iOS version and the app version (<span class="ui">Settings → Version</span>).</span>
+          </div>
+          <a class="btn" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>Email support</a>
+        </div>
+      </section>
 
-      <li>
-        <strong>4. Can I use the app offline?</strong><br />
-        Absolutely. All data is stored locally and will sync to iCloud once you’re back online.
-      </li>
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>Getting started</h2>
+        <div class="group">
+          <details class="faq"><summary>How do I add an exercise?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>On the <span class="ui">Workouts</span> tab, tap <span class="ui">+</span>, type a name or tap one of the popular exercises, then tap <span class="ui">Create</span>. The new exercise opens right away.</p></div></details>
+          <details class="faq"><summary>How do I log a set?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Tap <span class="ui">+</span> on an exercise’s row or swipe right on it, or open the exercise and tap <span class="ui">Log Result</span>. Weight and reps start from your last set, so repeating it is a single tap on <span class="ui">Save Result</span>.</p><p>Adjust the weight with the plate steps (±2.5/±5&nbsp;kg or ±5/±10&nbsp;lb) and the reps with the presets, or press and hold the steppers. For pull-ups and other bodyweight exercises, switch on bodyweight and only reps are tracked.</p></div></details>
+          <details class="faq"><summary>Can I log a workout I did earlier?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Yes. Change the date and time in the log sheet before saving. Back-dated sets don’t start the rest timer.</p></div></details>
+          <details class="faq"><summary>How do I edit or delete a set or an exercise?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Open the exercise and tap a set in its history to edit or delete it. To rename or delete an exercise, swipe left on it in the list or touch and hold it.</p><p>Deleting an exercise that has results asks for confirmation, and anything you delete can be restored with <span class="ui">Undo</span> in the message at the bottom of the screen.</p></div></details>
+        </div>
+      </section>
 
-      <li>
-        <strong>5. How do I change weight units?</strong><br />
-        Go to the Settings tab and choose your preferred unit (kg or lb). The app also shows both units for easy reference.
-      </li>
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>Records and progress</h2>
+        <div class="group">
+          <details class="faq"><summary>When is a set a personal record?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>A weighted set is a record when its weight or its estimated one-rep max beats every earlier set of that exercise; a bodyweight set when its reps do. The very first set of an exercise is never a record. Records are marked in gold and celebrated with confetti as you log them.</p></div></details>
+          <details class="faq"><summary>How is the estimated 1RM calculated?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>With the Epley formula: weight × (1 + reps ÷ 30). For a single rep it’s the weight itself. Bodyweight sets have no 1RM.</p></div></details>
+          <details class="faq"><summary>How does the week streak work?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>It counts consecutive calendar weeks with at least one session. The current week doesn’t break your streak while it’s still running; only a whole week without training does.</p></div></details>
+          <details class="faq"><summary>Where do I see my overall progress?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Every exercise has a chart of weight, estimated 1RM, volume or reps over 1W, 1M, 3M, 1Y or All (drag across it to inspect a day), its personal records and its full history. The <span class="ui">Statistics</span> tab adds sessions and volume compared with the previous period, a training volume chart, an 18-week consistency map and a progress card for every exercise.</p></div></details>
+          <details class="faq"><summary>Why are some charts missing?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Charts with fewer than 2 results in the selected range are hidden. To always show them, turn off <span class="ui">Hide Empty Charts</span> in <span class="ui">Settings</span>.</p></div></details>
+        </div>
+      </section>
 
-      <li>
-        <strong>6. What happens if there’s a sync conflict?</strong><br />
-        The app handles conflicts automatically by merging results, so you never lose your progress.
-      </li>
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>Rest timer</h2>
+        <div class="group">
+          <details class="faq"><summary>How does the rest timer work?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>It starts by itself after you log a set. The floating pill shows your rest time with a ring that fills over 3 minutes, and a haptic tells you when it’s full. Tap <span class="ui">Next set</span> to log the next set of the same exercise, prefilled with the one you just did. The timer hides after 15 minutes, or you can stop it yourself.</p></div></details>
+        </div>
+      </section>
 
-      <li>
-        <strong>7. Can I sort workouts differently?</strong><br />
-        Yes. In Settings, choose between sorting by date (newest first) or alphabetically.
-      </li>
-    </ul>
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>Widgets</h2>
+        <div class="group">
+          <details class="faq"><summary>How do I add a widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Touch and hold an empty area of the Home Screen, tap <span class="ui">Edit</span> → <span class="ui">Add Widget</span> and choose Training Track. <span class="ui">This Week</span> shows your sessions, streak and latest exercises; <span class="ui">Exercise</span> shows one exercise’s latest set, trend and records. Both come in small, medium and large.</p><p>For the Lock Screen, touch and hold it, tap <span class="ui">Customize</span> and add a widget there.</p></div></details>
+          <details class="faq"><summary>How do I choose the exercise a widget shows?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Touch and hold the Exercise widget, tap <span class="ui">Edit Widget</span> and pick an exercise, or keep <span class="ui">Most Recent</span> to always see the one you trained last.</p></div></details>
+          <details class="faq"><summary>Can I log a set from a widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Tap <span class="ui">+</span> next to an exercise and the app opens its log sheet, prefilled from your last set. Tap anywhere else to open the app or the exercise. Widgets never change your log by themselves.</p></div></details>
+          <details class="faq"><summary>My widget is empty or out of date<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Open the app once: widgets show what the app last saved. After that they update as soon as you log a set and move on to the new day at midnight.</p></div></details>
+        </div>
+      </section>
 
-    <h2>Contact Support</h2>
-    <p>
-      If you didn’t find the answer you’re looking for, or if you need further assistance, feel free to reach out to us. We’ll get back to you as soon as possible.
-    </p>
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>
-    </p>
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span>iCloud and backup</h2>
+        <div class="group">
+          <details class="faq"><summary>How does sync between my devices work?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Sign in with the same Apple Account on each device and keep iCloud turned on for the app (<span class="ui">Settings → [your name] → iCloud</span>). Training Tracker syncs whenever you change something and every 30 seconds while it’s open. Your preferences, such as the unit and language, sync too.</p></div></details>
+          <details class="faq"><summary>Sync isn’t working. What can I check?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Open the app’s <span class="ui">Settings</span> tab and look at <span class="ui">iCloud Sync</span>:</p><ul><li><strong>Not Available:</strong> sign in to iCloud in the iOS Settings app.</li><li><strong>Restricted:</strong> iCloud is limited by Screen Time or a device management profile.</li><li><strong>Offline:</strong> check your internet connection.</li></ul><p>When the status is <span class="ui">Active</span>, tap <span class="ui">Sync Now</span>. Your log is safe in the meantime: the app keeps working offline and syncs as soon as it can.</p></div></details>
+          <details class="faq"><summary>What if I change something on two devices?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>The changes are merged automatically and nothing is duplicated. If the same set or exercise was edited on both, the most recent change wins.</p></div></details>
+          <details class="faq"><summary>Does the app work without iCloud or internet?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Yes, fully. Without iCloud your log simply stays on the device.</p></div></details>
+          <details class="faq"><summary>How do I back up or move my data?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>In <span class="ui">Settings</span>, tap <span class="ui">Export CSV</span> and save or share the file. To bring it back, tap <span class="ui">Import CSV</span> and pick the file: it’s merged with your current log, and sets you already have are skipped. It’s a plain CSV file, so it also opens in Numbers or Excel:</p><pre><code>Workout,Date,Weight,Unit,Reps
+"Bench Press",2025-01-15 14:30:00,80.0,kg,10</code></pre></div></details>
+        </div>
+      </section>
 
-    <h2>Feedback</h2>
-    <p>
-      We value your feedback! If you have suggestions, improvements, or feature requests, please send them to the email above. Your input helps us make Training Tracker better for everyone.
-    </p>
-  </body>
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gray"><svg class="icon"><use href="assets/icons.svg#sliders"/></svg></span>Settings</h2>
+        <div class="group">
+          <details class="faq"><summary>How do I switch between kilograms and pounds?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>In <span class="ui">Settings</span>, choose kg or lb under <span class="ui">Weight Unit</span>. All sets are converted for display, whichever unit you logged them in. A single set can also be logged in the other unit right in the log sheet.</p></div></details>
+          <details class="faq"><summary>How do I change the app’s language?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>In <span class="ui">Settings</span>, choose a <span class="ui">Language</span>: English, Deutsch, Français, Українська, Español, 日本語 or Português, or <span class="ui">System default</span> to follow your iPhone. The widgets use the app’s language too.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card contact">
+          <div class="text">
+            <strong class="display">Ideas and feedback</strong>
+            <span class="secondary">Missing a feature or found something odd? Every message is read and helps make Training Tracker better.</span>
+          </div>
+          <a class="btn soft" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker">volodymyr.sichka@gmail.com</a>
+        </div>
+      </section>
+    </article>
+
+    <!-- Deutsch -->
+    <article lang="de">
+      <header class="page-head">
+        <h1 class="display">Support</h1>
+        <p class="lead">Antworten auf häufige Fragen zu Training Tracker und der direkte Draht zum Entwickler.</p>
+      </header>
+
+      <section class="section">
+        <div class="card contact">
+          <span class="tile lg c-accent"><svg class="icon"><use href="assets/icons.svg#mail"/></svg></span>
+          <div class="text">
+            <strong class="display">Kontakt</strong>
+            <span class="secondary">Fragen, Probleme oder Ideen? Schreib eine E-Mail und nenne dein iPhone-Modell, die iOS-Version und die App-Version (<span class="ui">Einstellungen → Version</span>).</span>
+          </div>
+          <a class="btn" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>E-Mail schreiben</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>Erste Schritte</h2>
+        <div class="group">
+          <details class="faq"><summary>Wie füge ich eine Übung hinzu?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Tippe im Tab <span class="ui">Übungen</span> auf <span class="ui">+</span>, gib einen Namen ein oder tippe auf eine der beliebten Übungen und dann auf <span class="ui">Erstellen</span>. Die neue Übung öffnet sich sofort.</p></div></details>
+          <details class="faq"><summary>Wie trage ich einen Satz ein?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Tippe in der Zeile einer Übung auf <span class="ui">+</span> oder wische nach rechts – oder öffne die Übung und tippe auf <span class="ui">Ergebnis eintragen</span>. Gewicht und Wiederholungen übernimmt die App aus deinem letzten Satz, ein gleicher Satz ist also nur ein Tipp auf <span class="ui">Ergebnis sichern</span>.</p><p>Ändere das Gewicht in Scheibenschritten (±2,5/±5&nbsp;kg oder ±5/±10&nbsp;lb) und die Wiederholungen über die Vorgaben, oder halte die Stepper gedrückt. Bei Klimmzügen und anderen Körpergewichtsübungen schaltest du auf Körpergewicht um, dann zählen nur die Wiederholungen.</p></div></details>
+          <details class="faq"><summary>Kann ich ein früheres Training nachtragen?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Ja. Ändere vor dem Sichern Datum und Uhrzeit. Nachgetragene Sätze starten keinen Pausentimer.</p></div></details>
+          <details class="faq"><summary>Wie bearbeite oder lösche ich einen Satz oder eine Übung?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Öffne die Übung und tippe im Verlauf auf einen Satz, um ihn zu bearbeiten oder zu löschen. Zum Umbenennen oder Löschen einer Übung wischst du in der Liste nach links oder hältst sie gedrückt.</p><p>Beim Löschen einer Übung mit Ergebnissen fragt die App nach, und alles Gelöschte lässt sich über <span class="ui">Widerrufen</span> in der Meldung am unteren Bildschirmrand wiederherstellen.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>Rekorde und Fortschritt</h2>
+        <div class="group">
+          <details class="faq"><summary>Wann ist ein Satz ein persönlicher Rekord?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Ein Satz mit Gewicht ist ein Rekord, wenn sein Gewicht oder sein geschätztes 1RM alle früheren Sätze dieser Übung übertrifft; ein Körpergewichtssatz, wenn seine Wiederholungen das tun. Der allererste Satz einer Übung ist nie ein Rekord. Rekorde sind golden markiert und werden beim Eintragen mit Konfetti gefeiert.</p></div></details>
+          <details class="faq"><summary>Wie wird das geschätzte 1RM berechnet?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Mit der Epley-Formel: Gewicht × (1 + Wiederholungen ÷ 30). Bei einer einzigen Wiederholung ist es das Gewicht selbst. Körpergewichtssätze haben kein 1RM.</p></div></details>
+          <details class="faq"><summary>Wie funktioniert die Wochen-Serie?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Sie zählt aufeinanderfolgende Kalenderwochen mit mindestens einer Einheit. Die laufende Woche unterbricht deine Serie nicht, solange sie noch läuft – erst eine ganze Woche ohne Training tut das.</p></div></details>
+          <details class="faq"><summary>Wo sehe ich meinen Gesamtfortschritt?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Jede Übung hat ein Diagramm für Gewicht, geschätztes 1RM, Volumen oder Wiederholungen über 1&nbsp;W, 1&nbsp;M, 3&nbsp;M, 1&nbsp;J oder Alle (zum Ansehen eines Tages darüberstreichen), dazu ihre persönlichen Rekorde und den ganzen Verlauf. Der Tab <span class="ui">Statistik</span> zeigt Einheiten und Volumen im Vergleich zum Vorzeitraum, ein Trainingsvolumen-Diagramm, eine Regelmäßigkeitskarte über 18 Wochen und eine Fortschrittskarte für jede Übung.</p></div></details>
+          <details class="faq"><summary>Warum fehlen manche Diagramme?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Diagramme mit weniger als 2 Ergebnissen im gewählten Zeitraum werden ausgeblendet. Damit sie immer erscheinen, schalte in den <span class="ui">Einstellungen</span> <span class="ui">Leere Diagramme ausblenden</span> aus.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>Pausentimer</h2>
+        <div class="group">
+          <details class="faq"><summary>Wie funktioniert der Pausentimer?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Er startet von selbst, sobald du einen Satz einträgst. Die schwebende Anzeige zeigt deine Pausenzeit mit einem Ring, der sich in 3 Minuten füllt, und ein haptisches Signal meldet, wenn er voll ist. Tippe auf <span class="ui">Nächster Satz</span>, um den nächsten Satz derselben Übung einzutragen – vorausgefüllt mit dem gerade gemachten. Nach 15 Minuten blendet sich der Timer aus, du kannst ihn aber auch selbst stoppen.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>Widgets</h2>
+        <div class="group">
+          <details class="faq"><summary>Wie füge ich ein Widget hinzu?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Lege den Finger auf eine freie Stelle des Home-Bildschirms, tippe auf <span class="ui">Bearbeiten</span> → <span class="ui">Widget hinzufügen</span> und wähle Training Track. <span class="ui">Diese Woche</span> zeigt deine Einheiten, Serie und letzten Übungen; <span class="ui">Übung</span> zeigt den letzten Satz, den Verlauf und die Rekorde einer Übung. Beide gibt es klein, mittel und groß.</p><p>Für den Sperrbildschirm legst du den Finger darauf, tippst auf <span class="ui">Anpassen</span> und fügst dort ein Widget hinzu.</p></div></details>
+          <details class="faq"><summary>Wie wähle ich die Übung für ein Widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Halte das Übungs-Widget gedrückt, tippe auf <span class="ui">Widget bearbeiten</span> und wähle eine Übung – oder behalte <span class="ui">Zuletzt trainiert</span>, um immer die zuletzt trainierte zu sehen.</p></div></details>
+          <details class="faq"><summary>Kann ich über ein Widget einen Satz eintragen?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Tippe neben einer Übung auf <span class="ui">+</span>, und die App öffnet das Eintragen, vorausgefüllt mit deinem letzten Satz. Ein Tipp an anderer Stelle öffnet die App oder die Übung. Widgets ändern dein Tagebuch nie selbst.</p></div></details>
+          <details class="faq"><summary>Mein Widget ist leer oder veraltet<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Öffne die App einmal: Widgets zeigen, was die App zuletzt gespeichert hat. Danach aktualisieren sie sich, sobald du einen Satz einträgst, und wechseln um Mitternacht auf den neuen Tag.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span>iCloud und Backup</h2>
+        <div class="group">
+          <details class="faq"><summary>Wie funktioniert der Abgleich zwischen meinen Geräten?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Melde dich auf jedem Gerät mit demselben Apple Account an und lass iCloud für die App eingeschaltet (<span class="ui">Einstellungen → [dein Name] → iCloud</span>). Training Tracker synchronisiert bei jeder Änderung und alle 30 Sekunden, solange die App geöffnet ist. Auch deine Einstellungen wie Einheit und Sprache werden abgeglichen.</p></div></details>
+          <details class="faq"><summary>Die Synchronisierung klappt nicht. Was kann ich prüfen?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Öffne in der App den Tab <span class="ui">Einstellungen</span> und sieh dir <span class="ui">iCloud-Sync</span> an:</p><ul><li><strong>Nicht verfügbar:</strong> Melde dich in der iOS-App „Einstellungen“ bei iCloud an.</li><li><strong>Eingeschränkt:</strong> iCloud ist durch Bildschirmzeit oder ein Geräteverwaltungsprofil beschränkt.</li><li><strong>Offline:</strong> Prüfe deine Internetverbindung.</li></ul><p>Steht der Status auf <span class="ui">Aktiv</span>, tippe auf <span class="ui">Jetzt synchronisieren</span>. Deine Daten sind solange sicher: Die App arbeitet offline weiter und synchronisiert, sobald es geht.</p></div></details>
+          <details class="faq"><summary>Was passiert, wenn ich auf zwei Geräten etwas ändere?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Die Änderungen werden automatisch zusammengeführt, nichts wird doppelt. Wurde derselbe Satz oder dieselbe Übung auf beiden geändert, gilt die neueste Änderung.</p></div></details>
+          <details class="faq"><summary>Funktioniert die App ohne iCloud oder Internet?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Ja, vollständig. Ohne iCloud bleibt dein Tagebuch einfach auf dem Gerät.</p></div></details>
+          <details class="faq"><summary>Wie sichere oder übertrage ich meine Daten?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Tippe in den <span class="ui">Einstellungen</span> auf <span class="ui">CSV exportieren</span> und sichere oder teile die Datei. Zum Zurückholen tippst du auf <span class="ui">CSV importieren</span> und wählst die Datei: Sie wird mit deinem aktuellen Tagebuch zusammengeführt, vorhandene Sätze werden übersprungen. Es ist eine einfache CSV-Datei, die sich auch in Numbers oder Excel öffnen lässt:</p><pre><code>Workout,Date,Weight,Unit,Reps
+"Bench Press",2025-01-15 14:30:00,80.0,kg,10</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gray"><svg class="icon"><use href="assets/icons.svg#sliders"/></svg></span>Einstellungen</h2>
+        <div class="group">
+          <details class="faq"><summary>Wie wechsle ich zwischen Kilogramm und Pfund?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Wähle in den <span class="ui">Einstellungen</span> unter <span class="ui">Gewichtseinheit</span> kg oder lb. Alle Sätze werden umgerechnet angezeigt, egal in welcher Einheit du sie eingetragen hast. Einen einzelnen Satz kannst du beim Eintragen auch in der anderen Einheit erfassen.</p></div></details>
+          <details class="faq"><summary>Wie ändere ich die Sprache der App?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Wähle in den <span class="ui">Einstellungen</span> unter <span class="ui">Sprache</span> English, Deutsch, Français, Українська, Español, 日本語 oder Português – oder <span class="ui">Systemstandard</span>, um der Sprache deines iPhone zu folgen. Auch die Widgets verwenden die Sprache der App.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card contact">
+          <div class="text">
+            <strong class="display">Ideen und Feedback</strong>
+            <span class="secondary">Fehlt dir eine Funktion oder ist dir etwas aufgefallen? Jede Nachricht wird gelesen und hilft, Training Tracker besser zu machen.</span>
+          </div>
+          <a class="btn soft" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker">volodymyr.sichka@gmail.com</a>
+        </div>
+      </section>
+    </article>
+
+    <!-- Français -->
+    <article lang="fr">
+      <header class="page-head">
+        <h1 class="display">Assistance</h1>
+        <p class="lead">Les réponses aux questions fréquentes sur Training Tracker, et comment joindre le développeur.</p>
+      </header>
+
+      <section class="section">
+        <div class="card contact">
+          <span class="tile lg c-accent"><svg class="icon"><use href="assets/icons.svg#mail"/></svg></span>
+          <div class="text">
+            <strong class="display">Nous contacter</strong>
+            <span class="secondary">Une question, un problème ou une idée&nbsp;? Envoyez un e-mail en précisant votre modèle d’iPhone, votre version d’iOS et la version de l’app (<span class="ui">Réglages → Version</span>).</span>
+          </div>
+          <a class="btn" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>Écrire un e-mail</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>Premiers pas</h2>
+        <div class="group">
+          <details class="faq"><summary>Comment ajouter un exercice&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Dans l’onglet <span class="ui">Exercices</span>, touchez <span class="ui">+</span>, saisissez un nom ou touchez l’un des exercices populaires, puis touchez <span class="ui">Créer</span>. Le nouvel exercice s’ouvre aussitôt.</p></div></details>
+          <details class="faq"><summary>Comment noter une série&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Touchez <span class="ui">+</span> sur la ligne d’un exercice ou balayez-la vers la droite, ou ouvrez l’exercice et touchez <span class="ui">Noter un résultat</span>. La charge et les répétitions reprennent votre dernière série&nbsp;: pour la répéter, il suffit de toucher <span class="ui">Enregistrer le résultat</span>.</p><p>Ajustez la charge par pas de disques (±2,5/±5&nbsp;kg ou ±5/±10&nbsp;lb) et les répétitions avec les valeurs prédéfinies, ou maintenez le doigt sur les boutons. Pour les tractions et autres exercices au poids du corps, activez le poids du corps&nbsp;: seules les répétitions comptent.</p></div></details>
+          <details class="faq"><summary>Puis-je noter une séance passée&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Oui. Modifiez la date et l’heure avant d’enregistrer. Les séries antidatées ne lancent pas le minuteur de repos.</p></div></details>
+          <details class="faq"><summary>Comment modifier ou supprimer une série ou un exercice&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Ouvrez l’exercice et touchez une série dans l’historique pour la modifier ou la supprimer. Pour renommer ou supprimer un exercice, balayez-le vers la gauche dans la liste ou maintenez le doigt dessus.</p><p>La suppression d’un exercice contenant des résultats demande une confirmation, et tout ce que vous supprimez peut être rétabli avec <span class="ui">Annuler</span> dans le message en bas de l’écran.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>Records et progression</h2>
+        <div class="group">
+          <details class="faq"><summary>Quand une série est-elle un record personnel&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Une série avec charge est un record quand sa charge ou son 1RM estimé dépasse toutes les séries précédentes de l’exercice&nbsp;; une série au poids du corps, quand ses répétitions le font. La toute première série d’un exercice n’est jamais un record. Les records sont marqués en or et fêtés avec des confettis dès que vous les notez.</p></div></details>
+          <details class="faq"><summary>Comment le 1RM estimé est-il calculé&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Avec la formule d’Epley&nbsp;: charge × (1 + répétitions ÷ 30). Pour une seule répétition, c’est la charge elle-même. Les séries au poids du corps n’ont pas de 1RM.</p></div></details>
+          <details class="faq"><summary>Comment fonctionne la série de semaines&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Elle compte les semaines calendaires consécutives avec au moins une séance. La semaine en cours ne casse pas votre série tant qu’elle n’est pas terminée&nbsp;: seule une semaine entière sans entraînement le fait.</p></div></details>
+          <details class="faq"><summary>Où voir ma progression globale&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Chaque exercice a un graphique de la charge, du 1RM estimé, du volume ou des répétitions sur 1&nbsp;S, 1&nbsp;M, 3&nbsp;M, 1&nbsp;A ou Tout (faites glisser le doigt pour voir un jour), ses records personnels et tout son historique. L’onglet <span class="ui">Statistiques</span> ajoute les séances et le volume comparés à la période précédente, un graphique du volume d’entraînement, une carte de régularité sur 18&nbsp;semaines et une fiche de progression pour chaque exercice.</p></div></details>
+          <details class="faq"><summary>Pourquoi certains graphiques manquent-ils&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Les graphiques comportant moins de 2 résultats dans la plage choisie sont masqués. Pour toujours les afficher, désactivez <span class="ui">Masquer les graphiques vides</span> dans <span class="ui">Réglages</span>.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>Minuteur de repos</h2>
+        <div class="group">
+          <details class="faq"><summary>Comment fonctionne le minuteur de repos&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Il démarre tout seul après chaque série notée. La pastille flottante affiche votre temps de repos avec un anneau qui se remplit en 3&nbsp;minutes, et une vibration vous prévient quand il est plein. Touchez <span class="ui">Série suivante</span> pour noter la série suivante du même exercice, préremplie avec celle que vous venez de faire. Le minuteur disparaît après 15&nbsp;minutes, mais vous pouvez aussi l’arrêter vous-même.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>Widgets</h2>
+        <div class="group">
+          <details class="faq"><summary>Comment ajouter un widget&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Maintenez le doigt sur une zone vide de l’écran d’accueil, touchez <span class="ui">Modifier</span> → <span class="ui">Ajouter un widget</span> et choisissez Training Track. <span class="ui">Cette semaine</span> affiche vos séances, votre série de semaines et vos derniers exercices&nbsp;; <span class="ui">Exercice</span> affiche la dernière série, la tendance et les records d’un exercice. Les deux existent en petit, moyen et grand format.</p><p>Pour l’écran verrouillé, maintenez le doigt dessus, touchez <span class="ui">Personnaliser</span> et ajoutez-y un widget.</p></div></details>
+          <details class="faq"><summary>Comment choisir l’exercice d’un widget&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Maintenez le doigt sur le widget Exercice, touchez <span class="ui">Modifier le widget</span> et choisissez un exercice, ou gardez <span class="ui">Dernier entraîné</span> pour toujours voir le dernier travaillé.</p></div></details>
+          <details class="faq"><summary>Puis-je noter une série depuis un widget&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Touchez <span class="ui">+</span> à côté d’un exercice et l’app ouvre la saisie, préremplie avec votre dernière série. Touchez ailleurs pour ouvrir l’app ou l’exercice. Les widgets ne modifient jamais votre journal d’eux-mêmes.</p></div></details>
+          <details class="faq"><summary>Mon widget est vide ou pas à jour<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Ouvrez l’app une fois&nbsp;: les widgets affichent ce que l’app a enregistré en dernier. Ensuite, ils se mettent à jour dès que vous notez une série et passent au nouveau jour à minuit.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span>iCloud et sauvegarde</h2>
+        <div class="group">
+          <details class="faq"><summary>Comment fonctionne la synchronisation entre mes appareils&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Connectez-vous avec le même compte Apple sur chaque appareil et laissez iCloud activé pour l’app (<span class="ui">Réglages → [votre nom] → iCloud</span>). Training Tracker se synchronise à chaque modification et toutes les 30&nbsp;secondes tant qu’il est ouvert. Vos préférences, comme l’unité et la langue, sont synchronisées aussi.</p></div></details>
+          <details class="faq"><summary>La synchronisation ne fonctionne pas. Que vérifier&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Ouvrez l’onglet <span class="ui">Réglages</span> de l’app et regardez <span class="ui">Synchro iCloud</span>&nbsp;:</p><ul><li><strong>Indisponible&nbsp;:</strong> connectez-vous à iCloud dans l’app Réglages d’iOS.</li><li><strong>Restreint&nbsp;:</strong> iCloud est limité par Temps d’écran ou par un profil de gestion de l’appareil.</li><li><strong>Hors ligne&nbsp;:</strong> vérifiez votre connexion Internet.</li></ul><p>Quand l’état indique <span class="ui">Actif</span>, touchez <span class="ui">Synchroniser</span>. Vos données ne risquent rien entre-temps&nbsp;: l’app continue de fonctionner hors ligne et se synchronise dès que possible.</p></div></details>
+          <details class="faq"><summary>Que se passe-t-il si je modifie quelque chose sur deux appareils&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Les modifications sont fusionnées automatiquement, sans doublons. Si la même série ou le même exercice a été modifié des deux côtés, c’est la modification la plus récente qui l’emporte.</p></div></details>
+          <details class="faq"><summary>L’app fonctionne-t-elle sans iCloud ni Internet&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Oui, entièrement. Sans iCloud, votre journal reste simplement sur l’appareil.</p></div></details>
+          <details class="faq"><summary>Comment sauvegarder ou transférer mes données&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Dans <span class="ui">Réglages</span>, touchez <span class="ui">Exporter en CSV</span> et enregistrez ou partagez le fichier. Pour le récupérer, touchez <span class="ui">Importer un CSV</span> et choisissez le fichier&nbsp;: il est fusionné avec votre journal actuel et les séries déjà présentes sont ignorées. C’est un simple fichier CSV, qui s’ouvre aussi dans Numbers ou Excel&nbsp;:</p><pre><code>Workout,Date,Weight,Unit,Reps
+"Bench Press",2025-01-15 14:30:00,80.0,kg,10</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gray"><svg class="icon"><use href="assets/icons.svg#sliders"/></svg></span>Réglages</h2>
+        <div class="group">
+          <details class="faq"><summary>Comment passer des kilogrammes aux livres&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Dans <span class="ui">Réglages</span>, choisissez kg ou lb sous <span class="ui">Unité de poids</span>. Toutes les séries sont converties à l’affichage, quelle que soit l’unité utilisée pour les noter. Une série peut aussi être notée dans l’autre unité directement lors de la saisie.</p></div></details>
+          <details class="faq"><summary>Comment changer la langue de l’app&nbsp;?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Dans <span class="ui">Réglages</span>, choisissez une <span class="ui">Langue</span>&nbsp;: English, Deutsch, Français, Українська, Español, 日本語 ou Português, ou <span class="ui">Réglage système</span> pour suivre votre iPhone. Les widgets utilisent eux aussi la langue de l’app.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card contact">
+          <div class="text">
+            <strong class="display">Idées et suggestions</strong>
+            <span class="secondary">Une fonction vous manque ou quelque chose vous semble étrange&nbsp;? Chaque message est lu et aide à améliorer Training Tracker.</span>
+          </div>
+          <a class="btn soft" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker">volodymyr.sichka@gmail.com</a>
+        </div>
+      </section>
+    </article>
+
+    <!-- Українська -->
+    <article lang="uk">
+      <header class="page-head">
+        <h1 class="display">Підтримка</h1>
+        <p class="lead">Відповіді на поширені запитання про Training Tracker і зв’язок із розробником.</p>
+      </header>
+
+      <section class="section">
+        <div class="card contact">
+          <span class="tile lg c-accent"><svg class="icon"><use href="assets/icons.svg#mail"/></svg></span>
+          <div class="text">
+            <strong class="display">Напишіть нам</strong>
+            <span class="secondary">Маєте запитання, проблему чи ідею? Надішліть листа й вкажіть модель iPhone, версію iOS і версію застосунку (<span class="ui">Налаштування → Версія</span>).</span>
+          </div>
+          <a class="btn" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>Написати листа</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>Початок роботи</h2>
+        <div class="group">
+          <details class="faq"><summary>Як додати вправу?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>На вкладці <span class="ui">Вправи</span> торкніться <span class="ui">+</span>, введіть назву або виберіть одну з популярних вправ і торкніться <span class="ui">Створити</span>. Нова вправа одразу відкриється.</p></div></details>
+          <details class="faq"><summary>Як записати підхід?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Торкніться <span class="ui">+</span> у рядку вправи або змахніть його праворуч — чи відкрийте вправу й торкніться <span class="ui">Записати результат</span>. Вага й повтори підставляються з вашого останнього підходу, тож повторити його — це один дотик до <span class="ui">Зберегти результат</span>.</p><p>Змінюйте вагу кроками дисків (±2,5/±5&nbsp;кг або ±5/±10&nbsp;фунтів), а повтори — готовими значеннями чи утримуючи кнопки. Для підтягувань та інших вправ із власною вагою увімкніть власну вагу — тоді рахуються лише повтори.</p></div></details>
+          <details class="faq"><summary>Чи можна записати минуле тренування?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Так. Перед збереженням змініть дату й час. Підходи, записані заднім числом, не запускають таймер відпочинку.</p></div></details>
+          <details class="faq"><summary>Як змінити чи видалити підхід або вправу?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Відкрийте вправу й торкніться підходу в історії, щоб змінити чи видалити його. Щоб перейменувати чи видалити вправу, змахніть її ліворуч у списку або натисніть і утримуйте.</p><p>Перед видаленням вправи з результатами застосунок перепитає, а все видалене можна повернути кнопкою <span class="ui">Скасувати</span> в повідомленні внизу екрана.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>Рекорди й прогрес</h2>
+        <div class="group">
+          <details class="faq"><summary>Коли підхід стає особистим рекордом?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Підхід із вагою — рекорд, коли його вага або оцінка 1ПМ перевищує всі попередні підходи цієї вправи; підхід із власною вагою — коли це роблять його повтори. Найперший підхід вправи рекордом не буває. Рекорди позначено золотим, а під час запису їх відзначає конфеті.</p></div></details>
+          <details class="faq"><summary>Як рахується оцінка 1ПМ?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>За формулою Еплі: вага × (1 + повтори ÷ 30). Для одного повтору це сама вага. Підходи з власною вагою 1ПМ не мають.</p></div></details>
+          <details class="faq"><summary>Як працює серія тижнів?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Вона рахує календарні тижні поспіль, у кожному з яких було хоча б одне тренування. Поточний тиждень не перериває серію, поки він триває, — це робить лише цілий тиждень без тренувань.</p></div></details>
+          <details class="faq"><summary>Де побачити загальний прогрес?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Кожна вправа має графік ваги, оцінки 1ПМ, обʼєму чи повторів за 1&nbsp;тиж, 1&nbsp;міс, 3&nbsp;міс, 1&nbsp;рік або все (проведіть пальцем, щоб подивитися день), свої особисті рекорди й повну історію. Вкладка <span class="ui">Статистика</span> додає тренування й обʼєм у порівнянні з попереднім періодом, графік обʼєму тренувань, карту регулярності за 18&nbsp;тижнів і картку прогресу для кожної вправи.</p></div></details>
+          <details class="faq"><summary>Чому деяких графіків немає?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Графіки, де у вибраному діапазоні менше 2 результатів, приховано. Щоб бачити їх завжди, вимкніть <span class="ui">Приховувати пусті графіки</span> в <span class="ui">Налаштуваннях</span>.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>Таймер відпочинку</h2>
+        <div class="group">
+          <details class="faq"><summary>Як працює таймер відпочинку?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Він запускається сам після кожного записаного підходу. Плаваюча плашка показує час відпочинку з кільцем, яке заповнюється за 3&nbsp;хвилини, а вібровідгук повідомить, коли воно повне. Торкніться <span class="ui">Наступний</span>, щоб записати наступний підхід тієї ж вправи, уже заповнений щойно зробленим. Через 15&nbsp;хвилин таймер ховається сам, або ж його можна зупинити.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>Віджети</h2>
+        <div class="group">
+          <details class="faq"><summary>Як додати віджет?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Натисніть і утримуйте вільне місце на початковому екрані, торкніться <span class="ui">Редагувати</span> → <span class="ui">Додати віджет</span> і виберіть Training Track. <span class="ui">Цього тижня</span> показує ваші тренування, серію та останні вправи; <span class="ui">Вправа</span> — останній підхід, динаміку й рекорди однієї вправи. Обидва бувають малими, середніми й великими.</p><p>Для екрана блокування натисніть і утримуйте його, торкніться <span class="ui">Налаштувати</span> й додайте віджет там.</p></div></details>
+          <details class="faq"><summary>Як вибрати вправу для віджета?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Натисніть і утримуйте віджет «Вправа», торкніться <span class="ui">Редагувати віджет</span> і виберіть вправу — або залиште <span class="ui">Остання тренована</span>, щоб завжди бачити ту, яку ви тренували останньою.</p></div></details>
+          <details class="faq"><summary>Чи можна записати підхід із віджета?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Торкніться <span class="ui">+</span> біля вправи, і застосунок відкриє запис, заповнений вашим останнім підходом. Дотик в іншому місці відкриває застосунок або вправу. Самі віджети ніколи не змінюють ваш щоденник.</p></div></details>
+          <details class="faq"><summary>Віджет порожній або застарів<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Один раз відкрийте застосунок: віджети показують те, що він зберіг востаннє. Далі вони оновлюються, щойно ви записуєте підхід, і опівночі переходять на новий день.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span>iCloud і резервні копії</h2>
+        <div class="group">
+          <details class="faq"><summary>Як працює синхронізація між пристроями?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Увійдіть на кожному пристрої в той самий обліковий запис Apple і не вимикайте iCloud для застосунку (<span class="ui">Параметри → [ваше ім’я] → iCloud</span>). Training Tracker синхронізується після кожної зміни та кожні 30&nbsp;секунд, поки відкритий. Налаштування — одиниця ваги, мова тощо — теж синхронізуються.</p></div></details>
+          <details class="faq"><summary>Синхронізація не працює. Що перевірити?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Відкрийте в застосунку вкладку <span class="ui">Налаштування</span> й подивіться на <span class="ui">Синхронізація iCloud</span>:</p><ul><li><strong>Недоступно:</strong> увійдіть в iCloud у Параметрах iOS.</li><li><strong>Обмежено:</strong> iCloud обмежено Екранним часом або профілем керування пристроєм.</li><li><strong>Офлайн:</strong> перевірте підключення до інтернету.</li></ul><p>Коли статус — <span class="ui">Активно</span>, торкніться <span class="ui">Синхронізувати</span>. Тим часом ваші дані в безпеці: застосунок працює офлайн і синхронізується, щойно зможе.</p></div></details>
+          <details class="faq"><summary>Що буде, якщо змінити щось на двох пристроях?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Зміни об’єднуються автоматично, нічого не дублюється. Якщо той самий підхід чи вправу змінили на обох, перемагає найновіша зміна.</p></div></details>
+          <details class="faq"><summary>Чи працює застосунок без iCloud або інтернету?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Так, повністю. Без iCloud ваш щоденник просто залишається на пристрої.</p></div></details>
+          <details class="faq"><summary>Як зробити резервну копію або перенести дані?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>У <span class="ui">Налаштуваннях</span> торкніться <span class="ui">Експорт CSV</span> і збережіть або надішліть файл. Щоб повернути дані, торкніться <span class="ui">Імпорт CSV</span> і виберіть файл: його буде об’єднано з поточним щоденником, а вже наявні підходи пропущено. Це звичайний CSV-файл, тож він відкривається й у Numbers чи Excel:</p><pre><code>Workout,Date,Weight,Unit,Reps
+"Bench Press",2025-01-15 14:30:00,80.0,kg,10</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gray"><svg class="icon"><use href="assets/icons.svg#sliders"/></svg></span>Налаштування</h2>
+        <div class="group">
+          <details class="faq"><summary>Як перемкнутися між кілограмами й фунтами?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>У <span class="ui">Налаштуваннях</span> виберіть kg або lb в <span class="ui">Одиниця ваги</span>. Усі підходи показуються в перерахунку, незалежно від того, в якій одиниці їх записано. Окремий підхід можна записати й в іншій одиниці просто під час запису.</p></div></details>
+          <details class="faq"><summary>Як змінити мову застосунку?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>У <span class="ui">Налаштуваннях</span> виберіть <span class="ui">Мова</span>: English, Deutsch, Français, Українська, Español, 日本語 чи Português — або <span class="ui">Системна</span>, щоб мова відповідала вашому iPhone. Віджети теж використовують мову застосунку.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card contact">
+          <div class="text">
+            <strong class="display">Ідеї та відгуки</strong>
+            <span class="secondary">Бракує якоїсь функції чи щось здалося дивним? Кожен лист прочитано, і кожен допомагає зробити Training Tracker кращим.</span>
+          </div>
+          <a class="btn soft" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker">volodymyr.sichka@gmail.com</a>
+        </div>
+      </section>
+    </article>
+
+    <!-- Español -->
+    <article lang="es">
+      <header class="page-head">
+        <h1 class="display">Soporte</h1>
+        <p class="lead">Respuestas a las preguntas frecuentes sobre Training Tracker y cómo contactar con el desarrollador.</p>
+      </header>
+
+      <section class="section">
+        <div class="card contact">
+          <span class="tile lg c-accent"><svg class="icon"><use href="assets/icons.svg#mail"/></svg></span>
+          <div class="text">
+            <strong class="display">Contacto</strong>
+            <span class="secondary">¿Preguntas, problemas o ideas? Envía un correo e indica tu modelo de iPhone, la versión de iOS y la versión de la app (<span class="ui">Ajustes → Versión</span>).</span>
+          </div>
+          <a class="btn" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>Enviar un correo</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>Primeros pasos</h2>
+        <div class="group">
+          <details class="faq"><summary>¿Cómo añado un ejercicio?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>En la pestaña <span class="ui">Ejercicios</span>, toca <span class="ui">+</span>, escribe un nombre o toca uno de los ejercicios populares y luego toca <span class="ui">Crear</span>. El nuevo ejercicio se abre al momento.</p></div></details>
+          <details class="faq"><summary>¿Cómo registro una serie?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Toca <span class="ui">+</span> en la fila de un ejercicio o desliza hacia la derecha, o abre el ejercicio y toca <span class="ui">Registrar resultado</span>. El peso y las repeticiones parten de tu última serie, así que repetirla es un solo toque en <span class="ui">Guardar resultado</span>.</p><p>Ajusta el peso por discos (±2,5/±5&nbsp;kg o ±5/±10&nbsp;lb) y las repeticiones con los valores rápidos, o mantén pulsados los botones. Para dominadas y otros ejercicios con peso corporal, activa el peso corporal y solo se registran las repeticiones.</p></div></details>
+          <details class="faq"><summary>¿Puedo registrar un entrenamiento anterior?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Sí. Cambia la fecha y la hora antes de guardar. Las series con fecha pasada no inician el temporizador de descanso.</p></div></details>
+          <details class="faq"><summary>¿Cómo edito o elimino una serie o un ejercicio?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Abre el ejercicio y toca una serie del historial para editarla o eliminarla. Para renombrar o eliminar un ejercicio, deslízalo hacia la izquierda en la lista o mantenlo pulsado.</p><p>Al eliminar un ejercicio con resultados, la app pide confirmación, y todo lo que elimines se puede recuperar con <span class="ui">Deshacer</span> en el aviso de la parte inferior de la pantalla.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>Récords y progreso</h2>
+        <div class="group">
+          <details class="faq"><summary>¿Cuándo es una serie un récord personal?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Una serie con peso es un récord cuando su peso o su 1RM estimado supera a todas las series anteriores de ese ejercicio; una serie con peso corporal, cuando lo hacen sus repeticiones. La primera serie de un ejercicio nunca es un récord. Los récords se marcan en dorado y se celebran con confeti al registrarlos.</p></div></details>
+          <details class="faq"><summary>¿Cómo se calcula el 1RM estimado?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Con la fórmula de Epley: peso × (1 + repeticiones ÷ 30). Con una sola repetición, es el propio peso. Las series con peso corporal no tienen 1RM.</p></div></details>
+          <details class="faq"><summary>¿Cómo funciona la racha semanal?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Cuenta las semanas de calendario seguidas con al menos una sesión. La semana actual no rompe la racha mientras sigue en curso; solo lo hace una semana completa sin entrenar.</p></div></details>
+          <details class="faq"><summary>¿Dónde veo mi progreso general?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Cada ejercicio tiene un gráfico de peso, 1RM estimado, volumen o repeticiones en 1&nbsp;S, 1&nbsp;M, 3&nbsp;M, 1&nbsp;A o Todo (desliza el dedo para ver un día), sus récords personales y todo su historial. La pestaña <span class="ui">Estadísticas</span> añade sesiones y volumen comparados con el periodo anterior, un gráfico de volumen de entrenamiento, un mapa de constancia de 18&nbsp;semanas y una tarjeta de progreso para cada ejercicio.</p></div></details>
+          <details class="faq"><summary>¿Por qué faltan algunos gráficos?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Los gráficos con menos de 2 resultados en el rango elegido se ocultan. Para verlos siempre, desactiva <span class="ui">Ocultar gráficos vacíos</span> en <span class="ui">Ajustes</span>.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>Temporizador de descanso</h2>
+        <div class="group">
+          <details class="faq"><summary>¿Cómo funciona el temporizador de descanso?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Se pone en marcha solo cada vez que registras una serie. La píldora flotante muestra tu tiempo de descanso con un anillo que se llena en 3&nbsp;minutos, y una vibración te avisa cuando está completo. Toca <span class="ui">Siguiente serie</span> para registrar la siguiente serie del mismo ejercicio, rellenada con la que acabas de hacer. El temporizador se oculta a los 15&nbsp;minutos, aunque también puedes detenerlo tú.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>Widgets</h2>
+        <div class="group">
+          <details class="faq"><summary>¿Cómo añado un widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Mantén pulsada una zona vacía de la pantalla de inicio, toca <span class="ui">Editar</span> → <span class="ui">Añadir widget</span> y elige Training Track. <span class="ui">Esta semana</span> muestra tus sesiones, tu racha y tus últimos ejercicios; <span class="ui">Ejercicio</span> muestra la última serie, la tendencia y los récords de un ejercicio. Ambos están en tamaño pequeño, mediano y grande.</p><p>Para la pantalla bloqueada, mantenla pulsada, toca <span class="ui">Personalizar</span> y añade allí un widget.</p></div></details>
+          <details class="faq"><summary>¿Cómo elijo el ejercicio de un widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Mantén pulsado el widget Ejercicio, toca <span class="ui">Editar widget</span> y elige un ejercicio, o deja <span class="ui">Último entrenado</span> para ver siempre el último que hayas entrenado.</p></div></details>
+          <details class="faq"><summary>¿Puedo registrar una serie desde un widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Toca <span class="ui">+</span> junto a un ejercicio y la app abre el registro, rellenado con tu última serie. Toca en cualquier otro sitio para abrir la app o el ejercicio. Los widgets nunca cambian tu diario por sí solos.</p></div></details>
+          <details class="faq"><summary>Mi widget está vacío o desactualizado<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Abre la app una vez: los widgets muestran lo último que guardó la app. Después se actualizan en cuanto registras una serie y pasan al nuevo día a medianoche.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span>iCloud y copias de seguridad</h2>
+        <div class="group">
+          <details class="faq"><summary>¿Cómo funciona la sincronización entre mis dispositivos?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Inicia sesión con la misma cuenta de Apple en cada dispositivo y deja iCloud activado para la app (<span class="ui">Ajustes → [tu nombre] → iCloud</span>). Training Tracker se sincroniza con cada cambio y cada 30&nbsp;segundos mientras está abierta. Tus preferencias, como la unidad y el idioma, también se sincronizan.</p></div></details>
+          <details class="faq"><summary>La sincronización no funciona. ¿Qué puedo revisar?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Abre la pestaña <span class="ui">Ajustes</span> de la app y mira <span class="ui">Sincronización con iCloud</span>:</p><ul><li><strong>No disponible:</strong> inicia sesión en iCloud en la app Ajustes de iOS.</li><li><strong>Restringido:</strong> iCloud está limitado por Tiempo de uso o por un perfil de gestión del dispositivo.</li><li><strong>Sin conexión:</strong> revisa tu conexión a internet.</li></ul><p>Cuando el estado sea <span class="ui">Activo</span>, toca <span class="ui">Sincronizar ahora</span>. Mientras tanto tus datos están a salvo: la app sigue funcionando sin conexión y se sincroniza en cuanto puede.</p></div></details>
+          <details class="faq"><summary>¿Qué pasa si cambio algo en dos dispositivos?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Los cambios se combinan automáticamente y nada se duplica. Si la misma serie o el mismo ejercicio se editó en ambos, gana el cambio más reciente.</p></div></details>
+          <details class="faq"><summary>¿Funciona la app sin iCloud o sin internet?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Sí, por completo. Sin iCloud, tu diario simplemente se queda en el dispositivo.</p></div></details>
+          <details class="faq"><summary>¿Cómo hago una copia de seguridad o traslado mis datos?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>En <span class="ui">Ajustes</span>, toca <span class="ui">Exportar CSV</span> y guarda o comparte el archivo. Para recuperarlo, toca <span class="ui">Importar CSV</span> y elige el archivo: se combina con tu diario actual y se omiten las series que ya tienes. Es un archivo CSV normal, así que también se abre en Numbers o Excel:</p><pre><code>Workout,Date,Weight,Unit,Reps
+"Bench Press",2025-01-15 14:30:00,80.0,kg,10</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gray"><svg class="icon"><use href="assets/icons.svg#sliders"/></svg></span>Ajustes</h2>
+        <div class="group">
+          <details class="faq"><summary>¿Cómo cambio entre kilogramos y libras?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>En <span class="ui">Ajustes</span>, elige kg o lb en <span class="ui">Unidad de peso</span>. Todas las series se muestran convertidas, sea cual sea la unidad en la que las registraste. También puedes registrar una serie concreta en la otra unidad directamente al anotarla.</p></div></details>
+          <details class="faq"><summary>¿Cómo cambio el idioma de la app?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>En <span class="ui">Ajustes</span>, elige un <span class="ui">Idioma</span>: English, Deutsch, Français, Українська, Español, 日本語 o Português, o <span class="ui">Predeterminado del sistema</span> para seguir a tu iPhone. Los widgets también usan el idioma de la app.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card contact">
+          <div class="text">
+            <strong class="display">Ideas y sugerencias</strong>
+            <span class="secondary">¿Echas en falta una función o has notado algo raro? Cada mensaje se lee y ayuda a mejorar Training Tracker.</span>
+          </div>
+          <a class="btn soft" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker">volodymyr.sichka@gmail.com</a>
+        </div>
+      </section>
+    </article>
+
+    <!-- 日本語 -->
+    <article lang="ja">
+      <header class="page-head">
+        <h1 class="display">サポート</h1>
+        <p class="lead">Training Trackerに関するよくある質問と、開発者への連絡方法です。</p>
+      </header>
+
+      <section class="section">
+        <div class="card contact">
+          <span class="tile lg c-accent"><svg class="icon"><use href="assets/icons.svg#mail"/></svg></span>
+          <div class="text">
+            <strong class="display">お問い合わせ</strong>
+            <span class="secondary">ご質問、不具合、アイデアはメールでお寄せください。iPhoneの機種、iOSのバージョン、アプリのバージョン（<span class="ui">設定 → バージョン</span>）を添えていただけると助かります。</span>
+          </div>
+          <a class="btn" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>メールを送る</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>はじめに</h2>
+        <div class="group">
+          <details class="faq"><summary>エクササイズを追加するには？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p><span class="ui">エクササイズ</span>タブで<span class="ui">+</span>をタップし、名前を入力するか人気のエクササイズを選んで<span class="ui">作成</span>をタップします。新しいエクササイズがすぐに開きます。</p></div></details>
+          <details class="faq"><summary>セットを記録するには？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>エクササイズの行の<span class="ui">+</span>をタップするか行を右にスワイプします。エクササイズを開いて<span class="ui">記録を追加</span>をタップしてもかまいません。重量と回数は前回のセットから入力されているので、同じセットなら<span class="ui">記録を保存</span>をタップするだけです。</p><p>重量はプレート単位（±2.5/±5 kg または ±5/±10 lb）で、回数はプリセットで調整でき、ステッパーは長押しでも動かせます。懸垂などの自重種目では自重に切り替えると、回数だけが記録されます。</p></div></details>
+          <details class="faq"><summary>過去のトレーニングを記録できますか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>はい。保存する前に日付と時刻を変更してください。過去の日時で記録したセットでは休憩タイマーは始まりません。</p></div></details>
+          <details class="faq"><summary>セットやエクササイズを編集・削除するには？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>エクササイズを開き、履歴のセットをタップすると編集や削除ができます。エクササイズの名前変更や削除は、リストで左にスワイプするか長押しします。</p><p>記録のあるエクササイズを削除するときは確認が表示されます。削除したものは、画面下部のメッセージの<span class="ui">取り消す</span>で元に戻せます。</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>自己ベストと進捗</h2>
+        <div class="group">
+          <details class="faq"><summary>どんなセットが自己ベストになりますか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>重量のあるセットは、重量または推定1RMがそのエクササイズの過去のすべてのセットを上回ると自己ベストになります。自重のセットは回数が上回ったときです。エクササイズの最初のセットは自己ベストになりません。自己ベストはゴールドで表示され、記録した瞬間に紙吹雪でお祝いします。</p></div></details>
+          <details class="faq"><summary>推定1RMはどう計算されますか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Epley式を使います：重量 ×（1 + 回数 ÷ 30）。1回の場合は重量そのものです。自重のセットには1RMはありません。</p></div></details>
+          <details class="faq"><summary>週の連続記録の仕組みは？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>1回以上トレーニングした暦週が何週続いているかを数えます。今週はまだ終わっていないので連続記録は途切れません。途切れるのは、トレーニングのない週がまるごと過ぎたときだけです。</p></div></details>
+          <details class="faq"><summary>全体の進捗はどこで見られますか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>各エクササイズには、重量・推定1RM・ボリューム・回数を1週、1か月、3か月、1年、全期間で表示するグラフ（指でなぞると日ごとの値を確認できます）、自己ベスト、すべての履歴があります。<span class="ui">統計</span>タブでは、前の期間と比べたトレーニング回数とボリューム、トレーニングボリュームのグラフ、18週間の継続マップ、エクササイズごとの進捗カードを確認できます。</p></div></details>
+          <details class="faq"><summary>一部のグラフが表示されないのはなぜですか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>選択した範囲内の結果が2件未満のグラフは非表示になります。常に表示するには、<span class="ui">設定</span>で<span class="ui">空のグラフを非表示</span>をオフにしてください。</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>休憩タイマー</h2>
+        <div class="group">
+          <details class="faq"><summary>休憩タイマーの使い方は？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>セットを記録すると自動的に始まります。画面に浮かぶピルに休憩時間が表示され、リングが3分かけて満ちると触覚フィードバックでお知らせします。<span class="ui">次のセット</span>をタップすると、同じエクササイズの次のセットを、直前のセットの内容が入力された状態で記録できます。タイマーは15分で自動的に消えますが、自分で止めることもできます。</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>ウィジェット</h2>
+        <div class="group">
+          <details class="faq"><summary>ウィジェットを追加するには？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>ホーム画面の何もないところを長押しし、<span class="ui">編集</span> → <span class="ui">ウィジェットを追加</span>をタップしてTraining Trackを選びます。<span class="ui">今週</span>はトレーニング回数、連続記録、最近のエクササイズを、<span class="ui">種目</span>は1つのエクササイズの最新セット、推移、自己ベストを表示します。どちらも小・中・大のサイズがあります。</p><p>ロック画面に追加するには、ロック画面を長押しして<span class="ui">カスタマイズ</span>をタップし、ウィジェットを追加します。</p></div></details>
+          <details class="faq"><summary>ウィジェットに表示するエクササイズを選ぶには？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>「種目」ウィジェットを長押しして<span class="ui">ウィジェットを編集</span>をタップし、エクササイズを選びます。<span class="ui">最後に行った種目</span>のままにしておくと、最後にトレーニングした種目が常に表示されます。</p></div></details>
+          <details class="faq"><summary>ウィジェットからセットを記録できますか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>エクササイズの横の<span class="ui">+</span>をタップすると、前回のセットが入力された記録画面がアプリで開きます。それ以外の場所をタップすると、アプリやそのエクササイズが開きます。ウィジェットがトレーニング記録を勝手に変更することはありません。</p></div></details>
+          <details class="faq"><summary>ウィジェットが空、または古いままです<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>一度アプリを開いてください。ウィジェットにはアプリが最後に保存した内容が表示されます。その後は、セットを記録するとすぐに更新され、午前0時に新しい日に切り替わります。</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span>iCloudとバックアップ</h2>
+        <div class="group">
+          <details class="faq"><summary>デバイス間の同期の仕組みは？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>すべてのデバイスで同じAppleアカウントにサインインし、アプリのiCloudをオンのままにしてください（<span class="ui">設定 → [ユーザ名] → iCloud</span>）。Training Trackerは変更のたびに、またアプリを開いている間は30秒ごとに同期します。単位や言語などの設定も同期されます。</p></div></details>
+          <details class="faq"><summary>同期がうまくいきません。何を確認すればよいですか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>アプリの<span class="ui">設定</span>タブで<span class="ui">iCloud同期</span>を確認してください：</p><ul><li><strong>利用不可：</strong>iOSの「設定」アプリでiCloudにサインインしてください。</li><li><strong>制限あり：</strong>スクリーンタイムやデバイス管理プロファイルによってiCloudが制限されています。</li><li><strong>オフライン：</strong>インターネット接続を確認してください。</li></ul><p>状態が<span class="ui">有効</span>になったら、<span class="ui">今すぐ同期</span>をタップします。その間もデータは安全です。アプリはオフラインで動作し続け、接続できしだい同期します。</p></div></details>
+          <details class="faq"><summary>2台のデバイスで変更するとどうなりますか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>変更は自動的に統合され、重複することはありません。同じセットやエクササイズを両方で編集した場合は、最新の変更が優先されます。</p></div></details>
+          <details class="faq"><summary>iCloudやインターネットがなくても使えますか？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>はい、すべての機能が使えます。iCloudを使わない場合、記録はそのデバイスに保存されます。</p></div></details>
+          <details class="faq"><summary>データをバックアップしたり移行したりするには？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p><span class="ui">設定</span>で<span class="ui">CSVを書き出す</span>をタップし、ファイルを保存または共有します。元に戻すには<span class="ui">CSVを読み込む</span>をタップしてファイルを選びます。現在の記録と統合され、すでにあるセットはスキップされます。一般的なCSVファイルなので、NumbersやExcelでも開けます：</p><pre><code>Workout,Date,Weight,Unit,Reps
+"Bench Press",2025-01-15 14:30:00,80.0,kg,10</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gray"><svg class="icon"><use href="assets/icons.svg#sliders"/></svg></span>設定</h2>
+        <div class="group">
+          <details class="faq"><summary>キログラムとポンドを切り替えるには？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p><span class="ui">設定</span>の<span class="ui">重量の単位</span>でkgまたはlbを選びます。どの単位で記録したセットも換算して表示されます。記録画面で、そのセットだけ別の単位で記録することもできます。</p></div></details>
+          <details class="faq"><summary>アプリの言語を変えるには？<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p><span class="ui">設定</span>の<span class="ui">言語</span>で、English、Deutsch、Français、Українська、Español、日本語、Portuguêsのいずれかを選ぶか、iPhoneの言語に合わせる<span class="ui">システムのデフォルト</span>を選びます。ウィジェットもアプリの言語で表示されます。</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card contact">
+          <div class="text">
+            <strong class="display">アイデアとご意見</strong>
+            <span class="secondary">欲しい機能や気になる点はありませんか？すべてのメッセージに目を通し、Training Trackerの改善に役立てています。</span>
+          </div>
+          <a class="btn soft" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker">volodymyr.sichka@gmail.com</a>
+        </div>
+      </section>
+    </article>
+
+    <!-- Português -->
+    <article lang="pt">
+      <header class="page-head">
+        <h1 class="display">Suporte</h1>
+        <p class="lead">Respostas para as dúvidas mais comuns sobre o Training Tracker e como falar com o desenvolvedor.</p>
+      </header>
+
+      <section class="section">
+        <div class="card contact">
+          <span class="tile lg c-accent"><svg class="icon"><use href="assets/icons.svg#mail"/></svg></span>
+          <div class="text">
+            <strong class="display">Fale conosco</strong>
+            <span class="secondary">Dúvidas, problemas ou ideias? Envie um e-mail informando o modelo do seu iPhone, a versão do iOS e a versão do app (<span class="ui">Ajustes → Versão</span>).</span>
+          </div>
+          <a class="btn" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg>Enviar e-mail</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>Primeiros passos</h2>
+        <div class="group">
+          <details class="faq"><summary>Como adiciono um exercício?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Na aba <span class="ui">Exercícios</span>, toque em <span class="ui">+</span>, digite um nome ou toque em um dos exercícios populares e depois em <span class="ui">Criar</span>. O novo exercício abre na hora.</p></div></details>
+          <details class="faq"><summary>Como registro uma série?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Toque em <span class="ui">+</span> na linha de um exercício ou deslize-a para a direita, ou abra o exercício e toque em <span class="ui">Registrar resultado</span>. Peso e repetições partem da sua última série, então repeti-la é só um toque em <span class="ui">Salvar resultado</span>.</p><p>Ajuste o peso em passos de anilha (±2,5/±5&nbsp;kg ou ±5/±10&nbsp;lb) e as repetições com os atalhos, ou mantenha os botões pressionados. Para barra fixa e outros exercícios com peso corporal, ative o peso corporal e só as repetições são registradas.</p></div></details>
+          <details class="faq"><summary>Posso registrar um treino que já fiz?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Sim. Altere a data e a hora antes de salvar. Séries com data passada não iniciam o timer de descanso.</p></div></details>
+          <details class="faq"><summary>Como edito ou apago uma série ou um exercício?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Abra o exercício e toque em uma série do histórico para editá-la ou apagá-la. Para renomear ou apagar um exercício, deslize-o para a esquerda na lista ou mantenha-o pressionado.</p><p>Ao apagar um exercício com resultados, o app pede confirmação, e tudo o que você apagar pode ser restaurado com <span class="ui">Desfazer</span> na mensagem na parte de baixo da tela.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>Recordes e progresso</h2>
+        <div class="group">
+          <details class="faq"><summary>Quando uma série é um recorde pessoal?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Uma série com peso é recorde quando o peso ou o 1RM estimado supera todas as séries anteriores daquele exercício; uma série com peso corporal, quando as repetições superam. A primeira série de um exercício nunca é recorde. Os recordes aparecem em dourado e são comemorados com confete na hora em que você os registra.</p></div></details>
+          <details class="faq"><summary>Como o 1RM estimado é calculado?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Pela fórmula de Epley: peso × (1 + repetições ÷ 30). Com uma única repetição, é o próprio peso. Séries com peso corporal não têm 1RM.</p></div></details>
+          <details class="faq"><summary>Como funciona a sequência de semanas?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Ela conta as semanas do calendário seguidas com pelo menos uma sessão. A semana atual não quebra a sequência enquanto ainda está em andamento; só uma semana inteira sem treino quebra.</p></div></details>
+          <details class="faq"><summary>Onde vejo meu progresso geral?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Cada exercício tem um gráfico de peso, 1RM estimado, volume ou repetições em 1&nbsp;S, 1&nbsp;M, 3&nbsp;M, 1&nbsp;A ou Tudo (arraste o dedo para ver um dia), seus recordes pessoais e todo o histórico. A aba <span class="ui">Estatísticas</span> mostra sessões e volume comparados com o período anterior, um gráfico de volume de treino, um mapa de consistência de 18&nbsp;semanas e um cartão de progresso para cada exercício.</p></div></details>
+          <details class="faq"><summary>Por que alguns gráficos não aparecem?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Gráficos com menos de 2 resultados no intervalo escolhido ficam ocultos. Para mostrá-los sempre, desative <span class="ui">Ocultar gráficos vazios</span> em <span class="ui">Ajustes</span>.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>Timer de descanso</h2>
+        <div class="group">
+          <details class="faq"><summary>Como funciona o timer de descanso?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Ele começa sozinho depois que você registra uma série. A pílula flutuante mostra o tempo de descanso com um anel que se completa em 3&nbsp;minutos, e uma vibração avisa quando ele fica cheio. Toque em <span class="ui">Próxima série</span> para registrar a próxima série do mesmo exercício, já preenchida com a que você acabou de fazer. O timer some após 15&nbsp;minutos, mas você também pode pará-lo.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>Widgets</h2>
+        <div class="group">
+          <details class="faq"><summary>Como adiciono um widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Mantenha pressionada uma área vazia da Tela de Início, toque em <span class="ui">Editar</span> → <span class="ui">Adicionar Widget</span> e escolha Training Track. <span class="ui">Esta semana</span> mostra suas sessões, sequência e últimos exercícios; <span class="ui">Exercício</span> mostra a última série, a tendência e os recordes de um exercício. Os dois existem nos tamanhos pequeno, médio e grande.</p><p>Para a Tela Bloqueada, mantenha-a pressionada, toque em <span class="ui">Personalizar</span> e adicione um widget lá.</p></div></details>
+          <details class="faq"><summary>Como escolho o exercício de um widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Mantenha pressionado o widget Exercício, toque em <span class="ui">Editar Widget</span> e escolha um exercício, ou mantenha <span class="ui">Último treinado</span> para ver sempre o último que você treinou.</p></div></details>
+          <details class="faq"><summary>Posso registrar uma série pelo widget?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Toque em <span class="ui">+</span> ao lado de um exercício e o app abre o registro, preenchido com a sua última série. Toque em qualquer outro lugar para abrir o app ou o exercício. Os widgets nunca alteram seu diário sozinhos.</p></div></details>
+          <details class="faq"><summary>Meu widget está vazio ou desatualizado<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Abra o app uma vez: os widgets mostram o que o app salvou por último. Depois disso, eles se atualizam assim que você registra uma série e passam para o novo dia à meia-noite.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span>iCloud e backup</h2>
+        <div class="group">
+          <details class="faq"><summary>Como funciona a sincronização entre meus dispositivos?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Inicie sessão com a mesma Conta Apple em cada dispositivo e mantenha o iCloud ativado para o app (<span class="ui">Ajustes → [seu nome] → iCloud</span>). O Training Tracker sincroniza a cada alteração e a cada 30&nbsp;segundos enquanto está aberto. Suas preferências, como unidade e idioma, também são sincronizadas.</p></div></details>
+          <details class="faq"><summary>A sincronização não funciona. O que posso verificar?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Abra a aba <span class="ui">Ajustes</span> do app e veja <span class="ui">Sincronização do iCloud</span>:</p><ul><li><strong>Indisponível:</strong> inicie sessão no iCloud no app Ajustes do iOS.</li><li><strong>Restrito:</strong> o iCloud está limitado pelo Tempo de Uso ou por um perfil de gerenciamento do dispositivo.</li><li><strong>Offline:</strong> verifique sua conexão com a internet.</li></ul><p>Quando o status for <span class="ui">Ativo</span>, toque em <span class="ui">Sincronizar agora</span>. Enquanto isso, seus dados estão seguros: o app continua funcionando offline e sincroniza assim que puder.</p></div></details>
+          <details class="faq"><summary>O que acontece se eu alterar algo em dois dispositivos?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>As alterações são combinadas automaticamente, sem duplicar nada. Se a mesma série ou o mesmo exercício foi editado nos dois, vale a alteração mais recente.</p></div></details>
+          <details class="faq"><summary>O app funciona sem iCloud ou sem internet?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Sim, totalmente. Sem iCloud, seu diário simplesmente fica no dispositivo.</p></div></details>
+          <details class="faq"><summary>Como faço backup ou transfiro meus dados?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Em <span class="ui">Ajustes</span>, toque em <span class="ui">Exportar CSV</span> e salve ou compartilhe o arquivo. Para trazê-lo de volta, toque em <span class="ui">Importar CSV</span> e escolha o arquivo: ele é combinado com seu diário atual, e as séries que você já tem são ignoradas. É um arquivo CSV comum, que também abre no Numbers ou no Excel:</p><pre><code>Workout,Date,Weight,Unit,Reps
+"Bench Press",2025-01-15 14:30:00,80.0,kg,10</code></pre></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display"><span class="tile c-gray"><svg class="icon"><use href="assets/icons.svg#sliders"/></svg></span>Ajustes</h2>
+        <div class="group">
+          <details class="faq"><summary>Como alterno entre quilos e libras?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Em <span class="ui">Ajustes</span>, escolha kg ou lb em <span class="ui">Unidade de peso</span>. Todas as séries são exibidas convertidas, seja qual for a unidade em que foram registradas. Você também pode registrar uma série na outra unidade direto na tela de registro.</p></div></details>
+          <details class="faq"><summary>Como mudo o idioma do app?<svg class="icon chevron"><use href="assets/icons.svg#chevron-down"/></svg></summary>
+            <div class="answer"><p>Em <span class="ui">Ajustes</span>, escolha um <span class="ui">Idioma</span>: English, Deutsch, Français, Українська, Español, 日本語 ou Português, ou <span class="ui">Padrão do sistema</span> para seguir o seu iPhone. Os widgets também usam o idioma do app.</p></div></details>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card contact">
+          <div class="text">
+            <strong class="display">Ideias e sugestões</strong>
+            <span class="secondary">Sentiu falta de algum recurso ou notou algo estranho? Toda mensagem é lida e ajuda a deixar o Training Tracker melhor.</span>
+          </div>
+          <a class="btn soft" href="mailto:volodymyr.sichka@gmail.com?subject=Training%20Tracker">volodymyr.sichka@gmail.com</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <nav>
+        <a href="marketing.html" class="l10n"><span lang="en">Overview</span><span lang="de">Überblick</span><span lang="fr">Aperçu</span><span lang="uk">Огляд</span><span lang="es">Resumen</span><span lang="ja">概要</span><span lang="pt">Visão geral</span></a>
+        <a href="support.html" class="l10n"><span lang="en">Support</span><span lang="de">Support</span><span lang="fr">Assistance</span><span lang="uk">Підтримка</span><span lang="es">Soporte</span><span lang="ja">サポート</span><span lang="pt">Suporte</span></a>
+        <a href="privacy-policy.html" class="l10n"><span lang="en">Privacy Policy</span><span lang="de">Datenschutzerklärung</span><span lang="fr">Politique de confidentialité</span><span lang="uk">Політика конфіденційності</span><span lang="es">Política de privacidad</span><span lang="ja">プライバシーポリシー</span><span lang="pt">Política de Privacidade</span></a>
+        <a href="https://apps.apple.com/app/id6752959007">App Store</a>
+      </nav>
+      <span>© 2026 Volodymyr Sichka</span>
+    </div>
+  </footer>
+</body>
 </html>

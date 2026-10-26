@@ -1,133 +1,715 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Training Tracker - Privacy Policy</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 0 40px;
-        line-height: 1.6;
-        color: #333;
-      }
-      h1,
-      h2 {
-        color: #1a73e8;
-      }
-      h1 {
-        text-align: center;
-        margin-bottom: 50px;
-      }
-      h2 {
-        margin-top: 40px;
-      }
-      p {
-        margin-bottom: 20px;
-      }
-      hr {
-        margin: 50px 0;
-        border: none;
-        border-top: 1px solid #eee;
-      }
-      .last-updated {
-        font-style: italic;
-        text-align: center;
-        margin-bottom: 50px;
-      }
-      .footer-note {
-        font-style: italic;
-        text-align: center;
-        margin-top: 50px;
-        color: #555;
-      }
-      a {
-        color: #1a73e8;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Training Tracker - Privacy Policy</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F2F2F7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+  <title>Privacy Policy · Training Tracker</title>
+  <meta name="description" content="Training Tracker has no accounts, collects no data and keeps your training log on your device and in your own iCloud.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js"></script>
+</head>
+<body>
+  <div class="l10n" data-title hidden>
+    <span lang="en">Privacy Policy · Training Tracker</span>
+    <span lang="de">Datenschutzerklärung · Training Tracker</span>
+    <span lang="fr">Politique de confidentialité · Training Tracker</span>
+    <span lang="uk">Політика конфіденційності · Training Tracker</span>
+    <span lang="es">Política de privacidad · Training Tracker</span>
+    <span lang="ja">プライバシーポリシー · Training Tracker</span>
+    <span lang="pt">Política de Privacidade · Training Tracker</span>
+  </div>
 
-    <p class="last-updated"><strong>Last updated: September 30, 2025</strong></p>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand display" href="marketing.html">
+        <picture>
+          <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="assets/app-icon.png" alt="" width="32" height="32">
+        </picture>
+        <span>Training Tracker</span>
+      </a>
+      <nav class="nav">
+        <a href="marketing.html" class="l10n"><span lang="en">Overview</span><span lang="de">Überblick</span><span lang="fr">Aperçu</span><span lang="uk">Огляд</span><span lang="es">Resumen</span><span lang="ja">概要</span><span lang="pt">Visão geral</span></a>
+        <a href="support.html" class="l10n"><span lang="en">Support</span><span lang="de">Support</span><span lang="fr">Assistance</span><span lang="uk">Підтримка</span><span lang="es">Soporte</span><span lang="ja">サポート</span><span lang="pt">Suporte</span></a>
+        <a href="privacy-policy.html" class="l10n" aria-current="page"><span lang="en">Privacy</span><span lang="de">Datenschutz</span><span lang="fr">Confidentialité</span><span lang="uk">Конфіденційність</span><span lang="es">Privacidad</span><span lang="ja">プライバシー</span><span lang="pt">Privacidade</span></a>
+      </nav>
+      <label class="lang-picker">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>
+        <select id="language" aria-label="Language">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="uk">Українська</option>
+          <option value="es">Español</option>
+          <option value="ja">日本語</option>
+          <option value="pt">Português</option>
+        </select>
+        <svg class="icon chevron" aria-hidden="true"><use href="assets/icons.svg#chevron-down"/></svg>
+      </label>
+    </div>
+  </header>
 
-    <p>
-      We respect your privacy 
-      and are committed to safeguarding any information you provide while using our 
-      iOS application, <strong>Training Tracker</strong>. This Privacy Policy outlines how 
-      we collect, use, and protect your information. By using <strong>Training Tracker</strong>, 
-      you agree to the practices described herein.
-    </p>
+  <main class="wrap narrow l10n">
 
-    <h2>1. Information We Collect</h2>
-    <p>
-      <strong>Training Tracker</strong> does not require you to create an account or provide any 
-      personal identifiable information. We do not collect, store, or transmit any data 
-      related to your identity or personal contacts.
-    </p>
+    <!-- English (authoritative) -->
+    <article lang="en">
+      <header class="page-head">
+        <h1 class="display">Privacy Policy</h1>
+        <p class="lead">Training Tracker is a training log that keeps your data to yourself. This policy explains what the app stores, where it is kept and what never reaches us.</p>
+        <p class="meta"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>Last updated: October 26, 2026</p>
+      </header>
 
-    <h2>2. Usage Data</h2>
-    <p>
-      We may collect non-personally identifiable data related to the performance and usage 
-      of the app (such as crash logs or error reports) through Apple’s built-in analytics 
-      or other trusted frameworks. This data helps us improve app reliability and enhance 
-      user experience. No personally identifiable information is included in this data.
-    </p>
+      <section class="section">
+        <h2 class="section-title display">At a glance</h2>
+        <div class="group">
+          <div class="row"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#person"/></svg></span><span><span class="row-title">No account</span><span class="row-text">You never sign up or sign in. The app doesn’t ask for your name, email address or any other personal details.</span></span></div>
+          <div class="row"><span class="tile c-green"><svg class="icon"><use href="assets/icons.svg#lock"/></svg></span><span><span class="row-title">Nothing collected</span><span class="row-text">The developer doesn’t collect, receive or store any of your data. No servers of ours are involved.</span></span></div>
+          <div class="row"><span class="tile c-pink"><svg class="icon"><use href="assets/icons.svg#eye-off"/></svg></span><span><span class="row-title">No tracking, no ads</span><span class="row-text">No analytics, no advertising, no third-party SDKs and no tracking across apps or websites.</span></span></div>
+          <div class="row"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span><span><span class="row-title">Your own iCloud</span><span class="row-text">Sync between your devices goes through your private iCloud account, which only you can access.</span></span></div>
+        </div>
+      </section>
 
-    <h2>3. Third-Party Services</h2>
-    <p>
-      <strong>Training Tracker</strong> does not integrate with external services that collect 
-      personal data. Any analytics or diagnostic information is handled securely through 
-      Apple’s ecosystem (if you have opted in) and is anonymized.
-    </p>
+      <section class="section">
+        <h2 class="section-title display">What the app stores</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Your training log:</strong> the names of your exercises and every set you log, with its date and time, weight, unit and number of reps.</li>
+            <li><strong>Your preferences:</strong> weight unit, sort order, app language and whether empty charts are hidden.</li>
+            <li><strong>A summary for the widgets:</strong> your sessions, streak and latest sets, so the Home Screen and Lock Screen widgets can show them.</li>
+          </ul>
+          <p>The app doesn’t access your location, contacts, photos, camera, microphone, health data or any other information on your device.</p>
+        </div>
+      </section>
 
-    <h2>4. Data Storage and Security</h2>
-    <p>
-      Since we do not store personal data, you do not need to worry about private information 
-      being compromised. Local settings, match data, and scores you track remain on your 
-      device. We rely on Apple’s standard security and sandboxing measures to protect 
-      app integrity.
-    </p>
+      <section class="section">
+        <h2 class="section-title display">Where your data is kept</h2>
+        <div class="card">
+          <h3>On your device</h3>
+          <p>The training log and the widget summary are saved in the app’s private storage on your iPhone. The widgets only read that summary.</p>
+          <h3>In your iCloud account</h3>
+          <p>If you are signed in to iCloud, the app keeps your devices in sync by saving a copy of your training log in the app’s iCloud folder and in its private iCloud database, and your preferences in iCloud key-value storage. All of this belongs to your Apple Account: the developer can’t see or access it. Apple stores and protects it as described in the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+          <h3>Without iCloud</h3>
+          <p>Everything stays on your device, and the app works fully offline.</p>
+        </div>
+      </section>
 
-    <h2>5. Children’s Privacy</h2>
-    <p>
-      <strong>Training Tracker</strong> is suitable for all ages and does not collect personal 
-      information from children. Since we do not store personal data, there is no risk to 
-      child privacy within our app.
-    </p>
+      <section class="section">
+        <h2 class="section-title display">What reaches the developer</h2>
+        <div class="card">
+          <p>Nothing from your training log. The app has no accounts, analytics, advertising or third-party code that collects data, and it connects to nothing but iCloud. Your data is never sold or shared.</p>
+          <p>If you have chosen to share analytics with app developers in <span class="ui">Settings → Privacy &amp; Security → Analytics &amp; Improvements</span>, Apple may give the developer anonymous crash reports and aggregated usage statistics. They contain none of your training data and don’t identify you. You can turn this off at any time.</p>
+        </div>
+      </section>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time to reflect changes in our 
-      practices or due to regulatory requirements. Any modifications will be posted 
-      on this page with a revised “Last Updated” date. We encourage you to review this 
-      Policy periodically.
-    </p>
+      <section class="section">
+        <h2 class="section-title display">Export and import</h2>
+        <div class="card">
+          <p>When you tap <span class="ui">Export CSV</span>, the app creates a file with your training log and hands it to the share sheet: you decide where it goes. <span class="ui">Import CSV</span> reads only the file you pick.</p>
+        </div>
+      </section>
 
-    <h2>7. Contact Us</h2>
-    <p>
-      If you have questions, concerns, or feedback about this Privacy Policy or 
-      <strong>Training Tracker</strong>, please reach out to us at:
-    </p>
-    <p>
-      <strong>Email:</strong> 
-      <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>
-    </p>
+      <section class="section">
+        <h2 class="section-title display">Deleting your data</h2>
+        <div class="card">
+          <ul>
+            <li>Delete single sets or whole exercises in the app at any time.</li>
+            <li>Deleting the app removes the data stored on that device.</li>
+            <li>To remove the copy in iCloud too, open <span class="ui">Settings → [your name] → iCloud</span>, manage your iCloud storage, choose Training Track and delete its data.</li>
+          </ul>
+        </div>
+      </section>
 
-    <hr />
+      <section class="section">
+        <h2 class="section-title display">Children</h2>
+        <div class="card">
+          <p>Training Tracker is suitable for all ages. It collects no personal information from anyone, including children.</p>
+        </div>
+      </section>
 
-    <p class="footer-note">
-      <em>
-        By using <strong>Training Tracker</strong>, you acknowledge that you have read and 
-        understood this Privacy Policy. If you do not agree with our practices, please 
-        refrain from using the app.
-      </em>
-    </p>
-  </body>
+      <section class="section">
+        <h2 class="section-title display">This website</h2>
+        <div class="card">
+          <p>These pages are hosted on GitHub Pages. They use no cookies, analytics or trackers, and your language choice is remembered only in your browser. GitHub may process technical data such as your IP address to deliver the pages and keep them secure, as described in the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Changes and contact</h2>
+        <div class="card">
+          <p>If the app ever handles data differently, this policy will be updated before that version is released, together with the date above.</p>
+          <p>Training Tracker is developed by Volodymyr Sichka. Questions about privacy are welcome at <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>.</p>
+        </div>
+      </section>
+    </article>
+
+    <!-- Deutsch -->
+    <article lang="de">
+      <header class="page-head">
+        <h1 class="display">Datenschutz&shy;erklärung</h1>
+        <p class="lead">Training Tracker ist ein Trainingstagebuch, das deine Daten bei dir lässt. Hier steht, was die App speichert, wo die Daten liegen und was uns nie erreicht.</p>
+        <p class="meta"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>Stand: 26. Oktober 2026</p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title display">Auf einen Blick</h2>
+        <div class="group">
+          <div class="row"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#person"/></svg></span><span><span class="row-title">Kein Konto</span><span class="row-text">Du musst dich nie registrieren oder anmelden. Die App fragt weder nach deinem Namen noch nach deiner E-Mail-Adresse oder anderen persönlichen Angaben.</span></span></div>
+          <div class="row"><span class="tile c-green"><svg class="icon"><use href="assets/icons.svg#lock"/></svg></span><span><span class="row-title">Keine Datenerhebung</span><span class="row-text">Der Entwickler erhebt, empfängt und speichert keine deiner Daten. Es sind keine eigenen Server beteiligt.</span></span></div>
+          <div class="row"><span class="tile c-pink"><svg class="icon"><use href="assets/icons.svg#eye-off"/></svg></span><span><span class="row-title">Kein Tracking, keine Werbung</span><span class="row-text">Keine Analysedienste, keine Werbung, keine SDKs von Drittanbietern und kein Tracking über Apps oder Websites hinweg.</span></span></div>
+          <div class="row"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span><span><span class="row-title">Deine eigene iCloud</span><span class="row-text">Der Abgleich zwischen deinen Geräten läuft über deinen privaten iCloud-Account, auf den nur du zugreifen kannst.</span></span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Was die App speichert</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Dein Trainingstagebuch:</strong> die Namen deiner Übungen und jeden eingetragenen Satz mit Datum und Uhrzeit, Gewicht, Einheit und Wiederholungen.</li>
+            <li><strong>Deine Einstellungen:</strong> Gewichtseinheit, Sortierung, App-Sprache und ob leere Diagramme ausgeblendet werden.</li>
+            <li><strong>Eine Zusammenfassung für die Widgets:</strong> deine Einheiten, deine Serie und deine letzten Sätze, damit die Widgets auf dem Home- und Sperrbildschirm sie anzeigen können.</li>
+          </ul>
+          <p>Die App greift nicht auf deinen Standort, deine Kontakte, Fotos, Kamera, dein Mikrofon, Gesundheitsdaten oder andere Informationen auf deinem Gerät zu.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Wo deine Daten liegen</h2>
+        <div class="card">
+          <h3>Auf deinem Gerät</h3>
+          <p>Das Trainingstagebuch und die Widget-Zusammenfassung werden im privaten Speicher der App auf deinem iPhone gesichert. Die Widgets lesen nur diese Zusammenfassung.</p>
+          <h3>In deinem iCloud-Account</h3>
+          <p>Wenn du bei iCloud angemeldet bist, hält die App deine Geräte synchron: Sie speichert eine Kopie deines Trainingstagebuchs im iCloud-Ordner der App und in ihrer privaten iCloud-Datenbank sowie deine Einstellungen im iCloud-Schlüssel-Wert-Speicher. All das gehört zu deinem Apple Account – der Entwickler kann es weder sehen noch darauf zugreifen. Apple speichert und schützt diese Daten gemäß der <a href="https://www.apple.com/de/legal/privacy/">Datenschutzrichtlinie von Apple</a>.</p>
+          <h3>Ohne iCloud</h3>
+          <p>Alles bleibt auf deinem Gerät, und die App funktioniert vollständig offline.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Was den Entwickler erreicht</h2>
+        <div class="card">
+          <p>Nichts aus deinem Trainingstagebuch. Die App hat keine Konten, keine Analyse, keine Werbung und keinen Fremdcode, der Daten sammelt, und sie verbindet sich mit nichts außer iCloud. Deine Daten werden nie verkauft oder weitergegeben.</p>
+          <p>Wenn du unter <span class="ui">Einstellungen → Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen</span> zugestimmt hast, Analysedaten mit App-Entwicklern zu teilen, kann Apple dem Entwickler anonyme Absturzberichte und zusammengefasste Nutzungsstatistiken bereitstellen. Sie enthalten keine Trainingsdaten und lassen keinen Rückschluss auf dich zu. Du kannst das jederzeit ausschalten.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Export und Import</h2>
+        <div class="card">
+          <p>Wenn du auf <span class="ui">CSV exportieren</span> tippst, erstellt die App eine Datei mit deinem Trainingstagebuch und übergibt sie an das Teilen-Menü – du entscheidest, wohin sie geht. <span class="ui">CSV importieren</span> liest nur die Datei, die du auswählst.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Daten löschen</h2>
+        <div class="card">
+          <ul>
+            <li>Einzelne Sätze oder ganze Übungen kannst du jederzeit in der App löschen.</li>
+            <li>Wenn du die App löschst, werden die auf diesem Gerät gespeicherten Daten entfernt.</li>
+            <li>Um auch die Kopie in iCloud zu entfernen, öffne <span class="ui">Einstellungen → [dein Name] → iCloud</span>, verwalte deinen iCloud-Speicher, wähle Training Track und lösche die Daten.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Kinder</h2>
+        <div class="card">
+          <p>Training Tracker ist für alle Altersgruppen geeignet. Die App erhebt von niemandem personenbezogene Daten, auch nicht von Kindern.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Diese Website</h2>
+        <div class="card">
+          <p>Diese Seiten werden über GitHub Pages bereitgestellt. Sie verwenden keine Cookies, Analysedienste oder Tracker; deine Sprachwahl wird nur in deinem Browser gespeichert. GitHub kann technische Daten wie deine IP-Adresse verarbeiten, um die Seiten auszuliefern und abzusichern – siehe das <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Änderungen und Kontakt</h2>
+        <div class="card">
+          <p>Falls die App jemals anders mit Daten umgeht, wird diese Erklärung vor dem Erscheinen der jeweiligen Version aktualisiert, ebenso das Datum oben.</p>
+          <p>Training Tracker wird von Volodymyr Sichka entwickelt. Fragen zum Datenschutz gern an <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>.</p>
+        </div>
+        <p class="footnote">Diese Übersetzung dient der Information. Bei Abweichungen gilt die englische Fassung.</p>
+      </section>
+    </article>
+
+    <!-- Français -->
+    <article lang="fr">
+      <header class="page-head">
+        <h1 class="display">Politique de confidentialité</h1>
+        <p class="lead">Training Tracker est un journal d’entraînement qui garde vos données pour vous. Cette politique explique ce que l’app enregistre, où les données sont conservées et ce qui ne nous parvient jamais.</p>
+        <p class="meta"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>Dernière mise à jour&nbsp;: 26&nbsp;octobre 2026</p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title display">En bref</h2>
+        <div class="group">
+          <div class="row"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#person"/></svg></span><span><span class="row-title">Aucun compte</span><span class="row-text">Vous n’avez jamais besoin de vous inscrire ni de vous connecter. L’app ne vous demande ni nom, ni adresse e-mail, ni aucune autre information personnelle.</span></span></div>
+          <div class="row"><span class="tile c-green"><svg class="icon"><use href="assets/icons.svg#lock"/></svg></span><span><span class="row-title">Aucune collecte</span><span class="row-text">Le développeur ne collecte, ne reçoit et ne stocke aucune de vos données. Aucun serveur à nous n’intervient.</span></span></div>
+          <div class="row"><span class="tile c-pink"><svg class="icon"><use href="assets/icons.svg#eye-off"/></svg></span><span><span class="row-title">Ni suivi, ni publicité</span><span class="row-text">Aucun outil d’analyse, aucune publicité, aucun SDK tiers et aucun suivi entre apps ou sites web.</span></span></div>
+          <div class="row"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span><span><span class="row-title">Votre propre iCloud</span><span class="row-text">La synchronisation entre vos appareils passe par votre compte iCloud privé, auquel vous seul avez accès.</span></span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Ce que l’app enregistre</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Votre journal d’entraînement&nbsp;:</strong> le nom de vos exercices et chaque série notée, avec sa date et son heure, la charge, l’unité et le nombre de répétitions.</li>
+            <li><strong>Vos préférences&nbsp;:</strong> unité de poids, ordre de tri, langue de l’app et masquage des graphiques vides.</li>
+            <li><strong>Un résumé pour les widgets&nbsp;:</strong> vos séances, votre série de semaines et vos dernières séries, pour que les widgets de l’écran d’accueil et de l’écran verrouillé puissent les afficher.</li>
+          </ul>
+          <p>L’app n’accède ni à votre position, ni à vos contacts, photos, appareil photo, micro, données de santé ou à toute autre information de votre appareil.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Où sont vos données</h2>
+        <div class="card">
+          <h3>Sur votre appareil</h3>
+          <p>Le journal d’entraînement et le résumé des widgets sont enregistrés dans l’espace de stockage privé de l’app sur votre iPhone. Les widgets se contentent de lire ce résumé.</p>
+          <h3>Dans votre compte iCloud</h3>
+          <p>Si vous êtes connecté à iCloud, l’app synchronise vos appareils en enregistrant une copie de votre journal dans le dossier iCloud de l’app et dans sa base de données iCloud privée, et vos préférences dans le stockage clé-valeur d’iCloud. Tout cela appartient à votre compte Apple&nbsp;: le développeur ne peut ni le voir ni y accéder. Apple conserve et protège ces données conformément à sa <a href="https://www.apple.com/fr/legal/privacy/">politique de confidentialité</a>.</p>
+          <h3>Sans iCloud</h3>
+          <p>Tout reste sur votre appareil et l’app fonctionne entièrement hors ligne.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Ce qui parvient au développeur</h2>
+        <div class="card">
+          <p>Rien de votre journal d’entraînement. L’app n’a ni compte, ni outil d’analyse, ni publicité, ni code tiers qui collecte des données, et elle ne se connecte qu’à iCloud. Vos données ne sont jamais vendues ni partagées.</p>
+          <p>Si vous avez accepté de partager les analyses avec les développeurs dans <span class="ui">Réglages → Confidentialité et sécurité → Analyse et améliorations</span>, Apple peut fournir au développeur des rapports de plantage anonymes et des statistiques d’utilisation agrégées. Ils ne contiennent aucune donnée d’entraînement et ne permettent pas de vous identifier. Vous pouvez désactiver ce partage à tout moment.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Export et import</h2>
+        <div class="card">
+          <p>Lorsque vous touchez <span class="ui">Exporter en CSV</span>, l’app crée un fichier contenant votre journal et le transmet à la feuille de partage&nbsp;: c’est vous qui décidez où il va. <span class="ui">Importer un CSV</span> ne lit que le fichier que vous choisissez.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Supprimer vos données</h2>
+        <div class="card">
+          <ul>
+            <li>Supprimez à tout moment des séries ou des exercices entiers dans l’app.</li>
+            <li>Supprimer l’app efface les données enregistrées sur cet appareil.</li>
+            <li>Pour supprimer aussi la copie dans iCloud, ouvrez <span class="ui">Réglages → [votre nom] → iCloud</span>, gérez votre stockage iCloud, choisissez Training Track et supprimez ses données.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Enfants</h2>
+        <div class="card">
+          <p>Training Tracker convient à tous les âges. L’app ne collecte aucune information personnelle, auprès de personne, y compris des enfants.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Ce site web</h2>
+        <div class="card">
+          <p>Ces pages sont hébergées sur GitHub Pages. Elles n’utilisent ni cookies, ni outils d’analyse, ni traceurs&nbsp;; votre choix de langue est mémorisé uniquement dans votre navigateur. GitHub peut traiter des données techniques comme votre adresse IP pour diffuser et sécuriser les pages, comme l’explique la <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">déclaration de confidentialité de GitHub</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Modifications et contact</h2>
+        <div class="card">
+          <p>Si l’app venait à traiter les données différemment, cette politique serait mise à jour avant la sortie de la version concernée, tout comme la date ci-dessus.</p>
+          <p>Training Tracker est développé par Volodymyr Sichka. Pour toute question sur la confidentialité, écrivez à <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>.</p>
+        </div>
+        <p class="footnote">Cette traduction est fournie à titre informatif. En cas de divergence, la version anglaise prévaut.</p>
+      </section>
+    </article>
+
+    <!-- Українська -->
+    <article lang="uk">
+      <header class="page-head">
+        <h1 class="display">Політика конфіденційності</h1>
+        <p class="lead">Training Tracker — щоденник тренувань, який залишає ваші дані вам. Тут пояснено, що зберігає застосунок, де лежать дані і що ніколи до нас не потрапляє.</p>
+        <p class="meta"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>Оновлено: 26 жовтня 2026 р.</p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title display">Коротко</h2>
+        <div class="group">
+          <div class="row"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#person"/></svg></span><span><span class="row-title">Без облікового запису</span><span class="row-text">Не треба ні реєструватися, ні входити. Застосунок не питає вашого імені, електронної пошти чи інших особистих даних.</span></span></div>
+          <div class="row"><span class="tile c-green"><svg class="icon"><use href="assets/icons.svg#lock"/></svg></span><span><span class="row-title">Нічого не збирається</span><span class="row-text">Розробник не збирає, не отримує і не зберігає жодних ваших даних. Наших серверів тут немає.</span></span></div>
+          <div class="row"><span class="tile c-pink"><svg class="icon"><use href="assets/icons.svg#eye-off"/></svg></span><span><span class="row-title">Без стеження й реклами</span><span class="row-text">Жодної аналітики, реклами, сторонніх SDK і жодного стеження між застосунками чи вебсайтами.</span></span></div>
+          <div class="row"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span><span><span class="row-title">Ваш власний iCloud</span><span class="row-text">Синхронізація між пристроями йде через ваш приватний обліковий запис iCloud, до якого маєте доступ лише ви.</span></span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Що зберігає застосунок</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Щоденник тренувань:</strong> назви ваших вправ і кожен записаний підхід із датою й часом, вагою, одиницею та кількістю повторів.</li>
+            <li><strong>Налаштування:</strong> одиниця ваги, порядок сортування, мова застосунку та чи приховувати пусті графіки.</li>
+            <li><strong>Зведення для віджетів:</strong> ваші тренування, серія тижнів і останні підходи, щоб віджети на початковому екрані та екрані блокування могли їх показати.</li>
+          </ul>
+          <p>Застосунок не має доступу до вашого місцезнаходження, контактів, фото, камери, мікрофона, даних про здоров’я чи будь-якої іншої інформації на пристрої.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Де зберігаються дані</h2>
+        <div class="card">
+          <h3>На вашому пристрої</h3>
+          <p>Щоденник тренувань і зведення для віджетів зберігаються в приватному сховищі застосунку на вашому iPhone. Віджети лише читають це зведення.</p>
+          <h3>У вашому обліковому записі iCloud</h3>
+          <p>Якщо ви ввійшли в iCloud, застосунок синхронізує ваші пристрої: зберігає копію щоденника в папці застосунку в iCloud і в його приватній базі даних iCloud, а налаштування — у сховищі ключ-значення iCloud. Усе це належить вашому обліковому запису Apple: розробник не може ні бачити цих даних, ні отримати до них доступ. Apple зберігає та захищає їх відповідно до <a href="https://www.apple.com/ua/legal/privacy/">Політики конфіденційності Apple</a>.</p>
+          <h3>Без iCloud</h3>
+          <p>Усе залишається на вашому пристрої, а застосунок повністю працює офлайн.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Що отримує розробник</h2>
+        <div class="card">
+          <p>Нічого з вашого щоденника тренувань. У застосунку немає облікових записів, аналітики, реклами чи стороннього коду, що збирає дані, і він не з’єднується ні з чим, крім iCloud. Ваші дані ніколи не продаються і нікому не передаються.</p>
+          <p>Якщо в Параметрах iOS (<span class="ui">Приватність і безпека → Аналітика й покращення</span>) ви погодилися ділитися аналітикою з розробниками, Apple може надавати розробнику анонімні звіти про збої та узагальнену статистику використання. У них немає даних про тренування, і вони не дозволяють вас ідентифікувати. Це можна вимкнути будь-коли.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Експорт та імпорт</h2>
+        <div class="card">
+          <p>Коли ви торкаєтеся <span class="ui">Експорт CSV</span>, застосунок створює файл із вашим щоденником і передає його в меню «Поширити» — куди його надіслати, вирішуєте ви. <span class="ui">Імпорт CSV</span> читає лише файл, який ви виберете.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Видалення даних</h2>
+        <div class="card">
+          <ul>
+            <li>Окремі підходи чи цілі вправи можна будь-коли видалити в застосунку.</li>
+            <li>Видалення застосунку прибирає дані, збережені на цьому пристрої.</li>
+            <li>Щоб видалити й копію в iCloud, відкрийте <span class="ui">Параметри → [ваше ім’я] → iCloud</span>, перейдіть до керування сховищем iCloud, виберіть Training Track і видаліть його дані.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Діти</h2>
+        <div class="card">
+          <p>Training Tracker підходить для будь-якого віку. Застосунок ні в кого не збирає особистої інформації, зокрема й у дітей.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Цей вебсайт</h2>
+        <div class="card">
+          <p>Ці сторінки розміщені на GitHub Pages. Вони не використовують ні cookies, ні аналітики, ні трекерів; вибрана мова запам’ятовується лише у вашому браузері. GitHub може обробляти технічні дані, як-от вашу IP-адресу, щоб доставляти сторінки й захищати їх, — див. <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Зміни та контакти</h2>
+        <div class="card">
+          <p>Якщо застосунок колись почне поводитися з даними інакше, цю політику буде оновлено ще до виходу такої версії разом із датою вгорі.</p>
+          <p>Training Tracker розробляє Volodymyr Sichka. Із запитаннями про конфіденційність пишіть на <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>.</p>
+        </div>
+        <p class="footnote">Цей переклад наведено для зручності. У разі розбіжностей чинною є англійська версія.</p>
+      </section>
+    </article>
+
+    <!-- Español -->
+    <article lang="es">
+      <header class="page-head">
+        <h1 class="display">Política de privacidad</h1>
+        <p class="lead">Training Tracker es un diario de entrenamiento que deja tus datos contigo. Esta política explica qué guarda la app, dónde se conservan los datos y qué nunca nos llega.</p>
+        <p class="meta"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>Última actualización: 26 de octubre de 2026</p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title display">En resumen</h2>
+        <div class="group">
+          <div class="row"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#person"/></svg></span><span><span class="row-title">Sin cuenta</span><span class="row-text">Nunca tienes que registrarte ni iniciar sesión. La app no te pide tu nombre, tu correo electrónico ni ningún otro dato personal.</span></span></div>
+          <div class="row"><span class="tile c-green"><svg class="icon"><use href="assets/icons.svg#lock"/></svg></span><span><span class="row-title">No se recopila nada</span><span class="row-text">El desarrollador no recopila, recibe ni almacena ninguno de tus datos. No interviene ningún servidor nuestro.</span></span></div>
+          <div class="row"><span class="tile c-pink"><svg class="icon"><use href="assets/icons.svg#eye-off"/></svg></span><span><span class="row-title">Sin rastreo ni anuncios</span><span class="row-text">Sin analíticas, sin publicidad, sin SDK de terceros y sin rastreo entre apps o sitios web.</span></span></div>
+          <div class="row"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span><span><span class="row-title">Tu propio iCloud</span><span class="row-text">La sincronización entre tus dispositivos pasa por tu cuenta privada de iCloud, a la que solo tú puedes acceder.</span></span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Qué guarda la app</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Tu diario de entrenamiento:</strong> los nombres de tus ejercicios y cada serie que registras, con su fecha y hora, peso, unidad y repeticiones.</li>
+            <li><strong>Tus preferencias:</strong> unidad de peso, orden de clasificación, idioma de la app y si se ocultan los gráficos vacíos.</li>
+            <li><strong>Un resumen para los widgets:</strong> tus sesiones, tu racha y tus últimas series, para que los widgets de la pantalla de inicio y de la pantalla bloqueada puedan mostrarlos.</li>
+          </ul>
+          <p>La app no accede a tu ubicación, contactos, fotos, cámara, micrófono, datos de salud ni a ninguna otra información de tu dispositivo.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Dónde se guardan tus datos</h2>
+        <div class="card">
+          <h3>En tu dispositivo</h3>
+          <p>El diario de entrenamiento y el resumen de los widgets se guardan en el almacenamiento privado de la app en tu iPhone. Los widgets solo leen ese resumen.</p>
+          <h3>En tu cuenta de iCloud</h3>
+          <p>Si has iniciado sesión en iCloud, la app mantiene tus dispositivos sincronizados guardando una copia de tu diario en la carpeta de iCloud de la app y en su base de datos privada de iCloud, y tus preferencias en el almacenamiento clave-valor de iCloud. Todo ello pertenece a tu cuenta de Apple: el desarrollador no puede verlo ni acceder a ello. Apple lo almacena y protege según su <a href="https://www.apple.com/es/legal/privacy/">Política de privacidad</a>.</p>
+          <h3>Sin iCloud</h3>
+          <p>Todo se queda en tu dispositivo y la app funciona completamente sin conexión.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Qué llega al desarrollador</h2>
+        <div class="card">
+          <p>Nada de tu diario de entrenamiento. La app no tiene cuentas, analíticas, publicidad ni código de terceros que recopile datos, y solo se conecta a iCloud. Tus datos nunca se venden ni se comparten.</p>
+          <p>Si has aceptado compartir análisis con los desarrolladores en <span class="ui">Ajustes → Privacidad y seguridad → Análisis y mejoras</span>, Apple puede facilitar al desarrollador informes de fallos anónimos y estadísticas de uso agregadas. No contienen ningún dato de entrenamiento ni te identifican. Puedes desactivarlo en cualquier momento.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Exportar e importar</h2>
+        <div class="card">
+          <p>Al tocar <span class="ui">Exportar CSV</span>, la app crea un archivo con tu diario y lo pasa a la hoja de compartir: tú decides adónde va. <span class="ui">Importar CSV</span> solo lee el archivo que elijas.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Eliminar tus datos</h2>
+        <div class="card">
+          <ul>
+            <li>Elimina series sueltas o ejercicios completos en la app cuando quieras.</li>
+            <li>Al eliminar la app se borran los datos guardados en ese dispositivo.</li>
+            <li>Para eliminar también la copia de iCloud, abre <span class="ui">Ajustes → [tu nombre] → iCloud</span>, gestiona tu almacenamiento de iCloud, elige Training Track y elimina sus datos.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Niños</h2>
+        <div class="card">
+          <p>Training Tracker es apta para todas las edades. No recopila información personal de nadie, tampoco de niños.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Este sitio web</h2>
+        <div class="card">
+          <p>Estas páginas están alojadas en GitHub Pages. No usan cookies, analíticas ni rastreadores, y el idioma que elijas solo se recuerda en tu navegador. GitHub puede tratar datos técnicos como tu dirección IP para servir las páginas y protegerlas, tal como se describe en la <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Cambios y contacto</h2>
+        <div class="card">
+          <p>Si alguna vez la app trata los datos de otra forma, esta política se actualizará antes de publicar esa versión, junto con la fecha de arriba.</p>
+          <p>Training Tracker lo desarrolla Volodymyr Sichka. Si tienes preguntas sobre privacidad, escribe a <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>.</p>
+        </div>
+        <p class="footnote">Esta traducción se ofrece a título informativo. En caso de discrepancia, prevalece la versión en inglés.</p>
+      </section>
+    </article>
+
+    <!-- 日本語 -->
+    <article lang="ja">
+      <header class="page-head">
+        <h1 class="display">プライバシーポリシー</h1>
+        <p class="lead">Training Trackerは、あなたのデータをあなたの手元に置いておくトレーニング記録アプリです。アプリが何を保存し、データがどこにあり、何が開発者に届かないのかを説明します。</p>
+        <p class="meta"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>最終更新日：2026年10月26日</p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title display">概要</h2>
+        <div class="group">
+          <div class="row"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#person"/></svg></span><span><span class="row-title">アカウント不要</span><span class="row-text">登録もサインインも必要ありません。名前やメールアドレスなどの個人情報を尋ねることもありません。</span></span></div>
+          <div class="row"><span class="tile c-green"><svg class="icon"><use href="assets/icons.svg#lock"/></svg></span><span><span class="row-title">データを収集しません</span><span class="row-text">開発者があなたのデータを収集・受信・保存することは一切ありません。開発者のサーバーも使いません。</span></span></div>
+          <div class="row"><span class="tile c-pink"><svg class="icon"><use href="assets/icons.svg#eye-off"/></svg></span><span><span class="row-title">トラッキングも広告もなし</span><span class="row-text">解析ツール、広告、サードパーティSDKは使わず、Appやウェブサイトをまたいだトラッキングも行いません。</span></span></div>
+          <div class="row"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span><span><span class="row-title">あなた自身のiCloud</span><span class="row-text">デバイス間の同期は、あなただけがアクセスできる個人のiCloudアカウントを通じて行われます。</span></span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">アプリが保存するもの</h2>
+        <div class="card">
+          <ul>
+            <li><strong>トレーニング記録：</strong>エクササイズの名前と、記録した各セットの日時・重量・単位・回数。</li>
+            <li><strong>設定：</strong>重量の単位、並び順、アプリの言語、空のグラフを非表示にするかどうか。</li>
+            <li><strong>ウィジェット用のまとめ：</strong>ホーム画面とロック画面のウィジェットに表示するための、トレーニング回数、連続記録、最近のセット。</li>
+          </ul>
+          <p>位置情報、連絡先、写真、カメラ、マイク、ヘルスケアデータなど、デバイス上のその他の情報にはアクセスしません。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">データの保存場所</h2>
+        <div class="card">
+          <h3>デバイス上</h3>
+          <p>トレーニング記録とウィジェット用のまとめは、iPhone上のアプリ専用の領域に保存されます。ウィジェットはそのまとめを読み取るだけです。</p>
+          <h3>あなたのiCloudアカウント</h3>
+          <p>iCloudにサインインしている場合、デバイス間で同期するために、トレーニング記録のコピーをアプリのiCloudフォルダとアプリ専用の非公開iCloudデータベースに、設定をiCloudのキー値ストレージに保存します。これらはすべてあなたのAppleアカウントに属し、開発者が閲覧したりアクセスしたりすることはできません。Appleは<a href="https://www.apple.com/jp/legal/privacy/">Appleのプライバシーポリシー</a>に従ってこれらを保管・保護します。</p>
+          <h3>iCloudを使わない場合</h3>
+          <p>すべてのデータはデバイス上に残り、アプリは完全にオフラインで動作します。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">開発者に届くもの</h2>
+        <div class="card">
+          <p>トレーニング記録は一切届きません。アプリにはアカウント、解析、広告、データを収集するサードパーティのコードがなく、iCloud以外には接続しません。あなたのデータが販売・共有されることはありません。</p>
+          <p><span class="ui">設定 → プライバシーとセキュリティ → 解析および改善</span>でAppデベロッパとの共有に同意している場合、Appleが匿名のクラッシュレポートと集計された利用統計を開発者に提供することがあります。これらにトレーニングデータは含まれず、あなたを特定することもできません。この共有はいつでもオフにできます。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">書き出しと読み込み</h2>
+        <div class="card">
+          <p><span class="ui">CSVを書き出す</span>をタップすると、トレーニング記録のファイルが作成され、共有シートに渡されます。送り先を決めるのはあなたです。<span class="ui">CSVを読み込む</span>は、あなたが選んだファイルだけを読み込みます。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">データの削除</h2>
+        <div class="card">
+          <ul>
+            <li>個々のセットやエクササイズ全体は、アプリ内でいつでも削除できます。</li>
+            <li>アプリを削除すると、そのデバイスに保存されたデータも削除されます。</li>
+            <li>iCloud上のコピーも削除するには、<span class="ui">設定 → [ユーザ名] → iCloud</span>でiCloudストレージの管理を開き、Training Trackを選んでデータを削除してください。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">お子様について</h2>
+        <div class="card">
+          <p>Training Trackerはすべての年齢の方にご利用いただけます。お子様を含め、誰からも個人情報を収集しません。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">このウェブサイト</h2>
+        <div class="card">
+          <p>これらのページはGitHub Pagesでホストされています。Cookie、解析ツール、トラッカーは使用せず、選択した言語はお使いのブラウザにのみ保存されます。GitHubはページの配信と保護のために、IPアドレスなどの技術的なデータを処理することがあります。詳しくは<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーステートメント</a>をご覧ください。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">変更とお問い合わせ</h2>
+        <div class="card">
+          <p>アプリのデータの扱いが変わる場合は、そのバージョンの公開前にこのポリシーと上記の日付を更新します。</p>
+          <p>Training TrackerはVolodymyr Sichkaが開発しています。プライバシーに関するご質問は<a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>までお寄せください。</p>
+        </div>
+        <p class="footnote">この翻訳は参考のために提供しています。内容に相違がある場合は英語版が優先されます。</p>
+      </section>
+    </article>
+
+    <!-- Português -->
+    <article lang="pt">
+      <header class="page-head">
+        <h1 class="display">Política de Privacidade</h1>
+        <p class="lead">O Training Tracker é um diário de treino que deixa seus dados com você. Esta política explica o que o app armazena, onde os dados ficam e o que nunca chega até nós.</p>
+        <p class="meta"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>Última atualização: 26 de outubro de 2026</p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title display">Em resumo</h2>
+        <div class="group">
+          <div class="row"><span class="tile c-indigo"><svg class="icon"><use href="assets/icons.svg#person"/></svg></span><span><span class="row-title">Sem conta</span><span class="row-text">Você nunca precisa se cadastrar nem iniciar sessão. O app não pede seu nome, e-mail ou qualquer outro dado pessoal.</span></span></div>
+          <div class="row"><span class="tile c-green"><svg class="icon"><use href="assets/icons.svg#lock"/></svg></span><span><span class="row-title">Nada é coletado</span><span class="row-text">O desenvolvedor não coleta, recebe nem armazena nenhum dado seu. Nenhum servidor nosso está envolvido.</span></span></div>
+          <div class="row"><span class="tile c-pink"><svg class="icon"><use href="assets/icons.svg#eye-off"/></svg></span><span><span class="row-title">Sem rastreamento nem anúncios</span><span class="row-text">Sem análises, sem publicidade, sem SDKs de terceiros e sem rastreamento entre apps ou sites.</span></span></div>
+          <div class="row"><span class="tile c-blue"><svg class="icon"><use href="assets/icons.svg#cloud"/></svg></span><span><span class="row-title">Seu próprio iCloud</span><span class="row-text">A sincronização entre seus dispositivos passa pela sua conta privada do iCloud, que só você pode acessar.</span></span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">O que o app armazena</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Seu diário de treino:</strong> os nomes dos seus exercícios e cada série registrada, com data e hora, peso, unidade e número de repetições.</li>
+            <li><strong>Suas preferências:</strong> unidade de peso, ordem de classificação, idioma do app e se os gráficos vazios ficam ocultos.</li>
+            <li><strong>Um resumo para os widgets:</strong> suas sessões, sequência e últimas séries, para que os widgets da Tela de Início e da Tela Bloqueada possam exibi-los.</li>
+          </ul>
+          <p>O app não acessa sua localização, contatos, fotos, câmera, microfone, dados de saúde ou qualquer outra informação do dispositivo.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Onde seus dados ficam</h2>
+        <div class="card">
+          <h3>No seu dispositivo</h3>
+          <p>O diário de treino e o resumo dos widgets ficam salvos no armazenamento privado do app no seu iPhone. Os widgets apenas leem esse resumo.</p>
+          <h3>Na sua conta do iCloud</h3>
+          <p>Se você tiver iniciado sessão no iCloud, o app mantém seus dispositivos sincronizados salvando uma cópia do diário na pasta do app no iCloud e no banco de dados privado do iCloud, e suas preferências no armazenamento de chave-valor do iCloud. Tudo isso pertence à sua Conta Apple: o desenvolvedor não pode ver nem acessar esses dados. A Apple os armazena e protege conforme a <a href="https://www.apple.com/br/legal/privacy/">Política de Privacidade da Apple</a>.</p>
+          <h3>Sem iCloud</h3>
+          <p>Tudo fica no seu dispositivo, e o app funciona totalmente offline.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">O que chega ao desenvolvedor</h2>
+        <div class="card">
+          <p>Nada do seu diário de treino. O app não tem contas, análises, publicidade nem código de terceiros que colete dados, e só se conecta ao iCloud. Seus dados nunca são vendidos nem compartilhados.</p>
+          <p>Se você aceitou compartilhar análises com desenvolvedores em <span class="ui">Ajustes → Privacidade e Segurança → Análise e Melhorias</span>, a Apple pode fornecer ao desenvolvedor relatórios de falhas anônimos e estatísticas de uso agregadas. Eles não contêm dados de treino nem identificam você. Você pode desativar isso a qualquer momento.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Exportar e importar</h2>
+        <div class="card">
+          <p>Ao tocar em <span class="ui">Exportar CSV</span>, o app cria um arquivo com seu diário e o entrega à planilha de compartilhamento: você decide para onde ele vai. <span class="ui">Importar CSV</span> lê apenas o arquivo que você escolher.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Apagar seus dados</h2>
+        <div class="card">
+          <ul>
+            <li>Apague séries avulsas ou exercícios inteiros no app quando quiser.</li>
+            <li>Apagar o app remove os dados armazenados naquele dispositivo.</li>
+            <li>Para remover também a cópia no iCloud, abra <span class="ui">Ajustes → [seu nome] → iCloud</span>, gerencie o armazenamento do iCloud, escolha Training Track e apague os dados.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Crianças</h2>
+        <div class="card">
+          <p>O Training Tracker é adequado para todas as idades. Ele não coleta informações pessoais de ninguém, inclusive de crianças.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Este site</h2>
+        <div class="card">
+          <p>Estas páginas são hospedadas no GitHub Pages. Elas não usam cookies, análises nem rastreadores, e o idioma escolhido fica salvo apenas no seu navegador. O GitHub pode processar dados técnicos, como seu endereço IP, para entregar e proteger as páginas, conforme descrito na <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Declaração de Privacidade do GitHub</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display">Alterações e contato</h2>
+        <div class="card">
+          <p>Se um dia o app passar a tratar os dados de outra forma, esta política será atualizada antes do lançamento dessa versão, junto com a data acima.</p>
+          <p>O Training Tracker é desenvolvido por Volodymyr Sichka. Dúvidas sobre privacidade são bem-vindas em <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>.</p>
+        </div>
+        <p class="footnote">Esta tradução é fornecida para sua conveniência. Em caso de divergência, prevalece a versão em inglês.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <nav>
+        <a href="marketing.html" class="l10n"><span lang="en">Overview</span><span lang="de">Überblick</span><span lang="fr">Aperçu</span><span lang="uk">Огляд</span><span lang="es">Resumen</span><span lang="ja">概要</span><span lang="pt">Visão geral</span></a>
+        <a href="support.html" class="l10n"><span lang="en">Support</span><span lang="de">Support</span><span lang="fr">Assistance</span><span lang="uk">Підтримка</span><span lang="es">Soporte</span><span lang="ja">サポート</span><span lang="pt">Suporte</span></a>
+        <a href="privacy-policy.html" class="l10n"><span lang="en">Privacy Policy</span><span lang="de">Datenschutzerklärung</span><span lang="fr">Politique de confidentialité</span><span lang="uk">Політика конфіденційності</span><span lang="es">Política de privacidad</span><span lang="ja">プライバシーポリシー</span><span lang="pt">Política de Privacidade</span></a>
+        <a href="https://apps.apple.com/app/id6752959007">App Store</a>
+      </nav>
+      <span>© 2026 Volodymyr Sichka</span>
+    </div>
+  </footer>
+</body>
 </html>

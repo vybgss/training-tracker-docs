@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F2F2F7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+  <title>Training Tracker – Gym Log for iPhone</title>
+  <meta name="description" content="A bold, fast strength log for iPhone. Log a set in one tap, celebrate every personal record and watch each lift grow.">
+  <meta name="apple-itunes-app" content="app-id=6752959007">
+  <meta property="og:title" content="Training Tracker">
+  <meta property="og:description" content="A bold, fast strength log for iPhone. Log a set in one tap, celebrate every personal record and watch each lift grow.">
+  <meta property="og:image" content="https://vybgss.github.io/training-tracker-docs/assets/app-icon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js"></script>
+</head>
+<body>
+  <div class="l10n" data-title hidden>
+    <span lang="en">Training Tracker – Gym Log for iPhone</span>
+    <span lang="de">Training Tracker – Trainingstagebuch fürs iPhone</span>
+    <span lang="fr">Training Tracker – Journal de musculation pour iPhone</span>
+    <span lang="uk">Training Tracker — щоденник тренувань для iPhone</span>
+    <span lang="es">Training Tracker – Diario de gimnasio para iPhone</span>
+    <span lang="ja">Training Tracker – iPhone用ジム記録アプリ</span>
+    <span lang="pt">Training Tracker – Diário de academia para iPhone</span>
+  </div>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand display" href="marketing.html">
+        <picture>
+          <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="assets/app-icon.png" alt="" width="32" height="32">
+        </picture>
+        <span>Training Tracker</span>
+      </a>
+      <nav class="nav">
+        <a href="marketing.html" class="l10n" aria-current="page"><span lang="en">Overview</span><span lang="de">Überblick</span><span lang="fr">Aperçu</span><span lang="uk">Огляд</span><span lang="es">Resumen</span><span lang="ja">概要</span><span lang="pt">Visão geral</span></a>
+        <a href="support.html" class="l10n"><span lang="en">Support</span><span lang="de">Support</span><span lang="fr">Assistance</span><span lang="uk">Підтримка</span><span lang="es">Soporte</span><span lang="ja">サポート</span><span lang="pt">Suporte</span></a>
+        <a href="privacy-policy.html" class="l10n"><span lang="en">Privacy</span><span lang="de">Datenschutz</span><span lang="fr">Confidentialité</span><span lang="uk">Конфіденційність</span><span lang="es">Privacidad</span><span lang="ja">プライバシー</span><span lang="pt">Privacidade</span></a>
+      </nav>
+      <label class="lang-picker">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>
+        <select id="language" aria-label="Language">
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+          <option value="fr">Français</option>
+          <option value="uk">Українська</option>
+          <option value="es">Español</option>
+          <option value="ja">日本語</option>
+          <option value="pt">Português</option>
+        </select>
+        <svg class="icon chevron" aria-hidden="true"><use href="assets/icons.svg#chevron-down"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <main class="wrap l10n">
+    <article lang="en">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <picture>
+              <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+              <img class="hero-icon" src="assets/app-icon.png" alt="" width="84" height="84">
+            </picture>
+            <h1 class="display">Training Tracker</h1>
+            <p class="tagline">A bold, fast strength log for iPhone. Log a set in one tap, celebrate every personal record and watch each lift grow.</p>
+            <div class="hero-actions">
+              <a class="btn light" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Download on the App Store</a>
+              <a class="btn glass" href="support.html">Support</a>
+            </div>
+            <div class="hero-chips">
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#person"/></svg>No account</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cloud"/></svg>iCloud sync</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#widgets"/></svg>Widgets</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>7 languages</span>
+            </div>
+          </div>
+          <div class="hero-shots">
+            <div class="phone front"><picture><source srcset="assets/screens/en/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/en/home-light.jpg" alt="The Workouts screen with this week’s sessions, a 27-week streak and recent exercises" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <div class="phone back" aria-hidden="true"><picture><source srcset="assets/screens/en/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/en/detail-light.jpg" alt="" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="intro">
+          <h2 class="display">Everything between two sets</h2>
+          <p>Training Tracker is made for the gym floor: quick to log, clear to read and honest about your progress.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="tile lg c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>
+            <h3 class="display">Log a set in seconds</h3>
+            <p>Every set starts from your last one, so repeating it is a single tap. Plate steps, rep presets and a bodyweight switch make any change quick.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>
+            <h3 class="display">Celebrate every record</h3>
+            <p>New bests in weight, estimated 1RM or reps are spotted while you type and celebrated with confetti. Records shine in gold.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-blue"><svg class="icon"><use href="assets/icons.svg#chart"/></svg></span>
+            <h3 class="display">See how you improve</h3>
+            <p>Charts for weight, estimated 1RM, volume and reps, from one week to all time. Drag across them to inspect any day.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>
+            <h3 class="display">Rest, then next set</h3>
+            <p>A rest timer starts after every set. Tap Next set to log the following one, already prefilled, and keep the workout flowing.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-flame"><svg class="icon"><use href="assets/icons.svg#flame"/></svg></span>
+            <h3 class="display">Keep the streak</h3>
+            <p>The This Week card counts your sessions and your week streak. Statistics adds volume trends and an 18-week consistency map.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>
+            <h3 class="display">Widgets everywhere</h3>
+            <p>Your week, your streak and any exercise’s trend on the Home Screen and Lock Screen. Tap + to jump straight to logging.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display intro-title">A closer look</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/en/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/en/home-light.jpg" alt="The Workouts screen with this week’s sessions, a 27-week streak and recent exercises" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Your week at a glance</strong><span>Streaks, sessions and progress for every lift</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/en/log-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/en/log-light.jpg" alt="The log sheet prefilled with the last set, 130 kg for 5 reps" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Log a set in seconds</strong><span>Prefilled from last time, with a live record check</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/en/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/en/detail-light.jpg" alt="A squat at 130 kg × 5 marked as a personal record, with its progress chart" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">See how you improve</strong><span>Charts, estimated 1RM and every personal best</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-green"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"/></svg></span>Private by design</h2>
+          <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>No account and no sign-up</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>No ads, analytics or tracking</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Works fully offline</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Syncs through your own iCloud</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Export to CSV whenever you like</span></li>
+          </ul>
+          <p><a href="privacy-policy.html">Read the privacy policy →</a></p>
+        </div>
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-purple"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg></span>Made for you</h2>
+          <p class="secondary">Kilograms or pounds, light or dark, and seven languages. The app follows your iPhone’s language or the one you pick in Settings, and so do its widgets.</p>
+          <div class="langs">
+              <span class="badge">English</span>
+              <span class="badge">Deutsch</span>
+              <span class="badge">Français</span>
+              <span class="badge">Українська</span>
+              <span class="badge">Español</span>
+              <span class="badge">日本語</span>
+              <span class="badge">Português</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card cta">
+          <picture>
+            <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/app-icon.png" alt="" width="76" height="76" loading="lazy">
+          </picture>
+          <h2 class="display">Start your training log</h2>
+          <p>Training Tracker is on the App Store for iPhone. Requires iOS 18.5 or later.</p>
+          <a class="btn" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Download on the App Store</a>
+        </div>
+      </section>
+    </article>
+
+    <article lang="de">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <picture>
+              <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+              <img class="hero-icon" src="assets/app-icon.png" alt="" width="84" height="84">
+            </picture>
+            <h1 class="display">Training Tracker</h1>
+            <p class="tagline">Ein kraftvolles, schnelles Trainingstagebuch fürs iPhone. Trag einen Satz mit einem Tipp ein, feiere jeden persönlichen Rekord und sieh jede Übung wachsen.</p>
+            <div class="hero-actions">
+              <a class="btn light" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Im App Store laden</a>
+              <a class="btn glass" href="support.html">Support</a>
+            </div>
+            <div class="hero-chips">
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#person"/></svg>Kein Konto</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cloud"/></svg>iCloud-Sync</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#widgets"/></svg>Widgets</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>7 Sprachen</span>
+            </div>
+          </div>
+          <div class="hero-shots">
+            <div class="phone front"><picture><source srcset="assets/screens/de/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/de/home-light.jpg" alt="Der Übungen-Bildschirm mit den Einheiten dieser Woche, 27 Wochen in Folge und den letzten Übungen" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <div class="phone back" aria-hidden="true"><picture><source srcset="assets/screens/de/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/de/detail-light.jpg" alt="" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="intro">
+          <h2 class="display">Alles zwischen zwei Sätzen</h2>
+          <p>Training Tracker ist für die Trainingsfläche gemacht: schnell eingetragen, klar zu lesen und ehrlich mit deinem Fortschritt.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="tile lg c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>
+            <h3 class="display">Ein Satz in Sekunden</h3>
+            <p>Jeder Satz startet mit deinem letzten, ein gleicher Satz ist also nur ein Tipp. Scheibenschritte, Wiederholungsvorgaben und ein Körpergewicht-Schalter machen jede Änderung schnell.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>
+            <h3 class="display">Jeden Rekord feiern</h3>
+            <p>Neue Bestwerte bei Gewicht, geschätztem 1RM oder Wiederholungen erkennt die App schon beim Eintippen und feiert sie mit Konfetti. Rekorde leuchten in Gold.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-blue"><svg class="icon"><use href="assets/icons.svg#chart"/></svg></span>
+            <h3 class="display">Sieh, wie du besser wirst</h3>
+            <p>Diagramme für Gewicht, geschätztes 1RM, Volumen und Wiederholungen – von einer Woche bis zur gesamten Zeit. Streich darüber, um jeden Tag anzusehen.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>
+            <h3 class="display">Pause, dann nächster Satz</h3>
+            <p>Nach jedem Satz startet ein Pausentimer. Tippe auf „Nächster Satz“, um den folgenden schon vorausgefüllt einzutragen, und bleib im Fluss.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-flame"><svg class="icon"><use href="assets/icons.svg#flame"/></svg></span>
+            <h3 class="display">Bleib in Serie</h3>
+            <p>Die Karte „Diese Woche“ zählt deine Einheiten und deine Wochen in Folge. Die Statistik zeigt Volumentrends und eine Regelmäßigkeitskarte über 18 Wochen.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>
+            <h3 class="display">Widgets überall</h3>
+            <p>Deine Woche, deine Serie und der Verlauf jeder Übung auf dem Home- und Sperrbildschirm. Tippe auf +, um direkt einzutragen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display intro-title">Ein genauerer Blick</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/de/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/de/home-light.jpg" alt="Der Übungen-Bildschirm mit den Einheiten dieser Woche, 27 Wochen in Folge und den letzten Übungen" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Deine Woche auf einen Blick</strong><span>Serien, Einheiten und Fortschritt für jede Übung</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/de/log-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/de/log-light.jpg" alt="Das Eintragen, vorausgefüllt mit dem letzten Satz: 130 kg, 5 Wiederholungen" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Ein Satz in Sekunden</strong><span>Vorausgefüllt vom letzten Mal, mit Live-Rekordcheck</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/de/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/de/detail-light.jpg" alt="Kniebeuge mit 130 kg × 5 als persönlicher Rekord, mit Fortschrittsdiagramm" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Sieh, wie du besser wirst</strong><span>Diagramme, geschätztes 1RM und jeder Bestwert</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-green"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"/></svg></span>Privat von Grund auf</h2>
+          <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Kein Konto, keine Registrierung</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Keine Werbung, Analyse oder Tracking</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Funktioniert vollständig offline</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Synchronisiert über deine eigene iCloud</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Jederzeit als CSV exportieren</span></li>
+          </ul>
+          <p><a href="privacy-policy.html">Datenschutzerklärung lesen →</a></p>
+        </div>
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-purple"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg></span>Für dich gemacht</h2>
+          <p class="secondary">Kilogramm oder Pfund, hell oder dunkel und sieben Sprachen. Die App folgt der Sprache deines iPhone oder der, die du in den Einstellungen wählst – ihre Widgets ebenso.</p>
+          <div class="langs">
+              <span class="badge">English</span>
+              <span class="badge">Deutsch</span>
+              <span class="badge">Français</span>
+              <span class="badge">Українська</span>
+              <span class="badge">Español</span>
+              <span class="badge">日本語</span>
+              <span class="badge">Português</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card cta">
+          <picture>
+            <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/app-icon.png" alt="" width="76" height="76" loading="lazy">
+          </picture>
+          <h2 class="display">Starte dein Trainingstagebuch</h2>
+          <p>Training Tracker gibt es im App Store für das iPhone. Erfordert iOS 18.5 oder neuer.</p>
+          <a class="btn" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Im App Store laden</a>
+        </div>
+      </section>
+    </article>
+
+    <article lang="fr">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <picture>
+              <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+              <img class="hero-icon" src="assets/app-icon.png" alt="" width="84" height="84">
+            </picture>
+            <h1 class="display">Training Tracker</h1>
+            <p class="tagline">Un journal de musculation rapide et percutant pour iPhone. Notez une série d’un seul geste, fêtez chaque record personnel et voyez chaque exercice progresser.</p>
+            <div class="hero-actions">
+              <a class="btn light" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Télécharger dans l’App Store</a>
+              <a class="btn glass" href="support.html">Assistance</a>
+            </div>
+            <div class="hero-chips">
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#person"/></svg>Sans compte</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cloud"/></svg>Synchro iCloud</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#widgets"/></svg>Widgets</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>7 langues</span>
+            </div>
+          </div>
+          <div class="hero-shots">
+            <div class="phone front"><picture><source srcset="assets/screens/fr/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/fr/home-light.jpg" alt="L’écran Exercices avec les séances de la semaine, 27 semaines d’affilée et les derniers exercices" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <div class="phone back" aria-hidden="true"><picture><source srcset="assets/screens/fr/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/fr/detail-light.jpg" alt="" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="intro">
+          <h2 class="display">Tout ce qu’il faut entre deux séries</h2>
+          <p>Training Tracker est pensé pour la salle&nbsp;: rapide à remplir, clair à lire et honnête sur vos progrès.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="tile lg c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>
+            <h3 class="display">Une série en quelques secondes</h3>
+            <p>Chaque série reprend la précédente&nbsp;: pour la répéter, un seul geste suffit. Pas de disques, répétitions prédéfinies et poids du corps rendent chaque changement rapide.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>
+            <h3 class="display">Chaque record fêté</h3>
+            <p>Les nouveaux records de charge, de 1RM estimé ou de répétitions sont repérés pendant la saisie et fêtés avec des confettis. Ils brillent en or.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-blue"><svg class="icon"><use href="assets/icons.svg#chart"/></svg></span>
+            <h3 class="display">Voyez vos progrès</h3>
+            <p>Des graphiques de charge, de 1RM estimé, de volume et de répétitions, d’une semaine à tout l’historique. Faites glisser le doigt pour voir chaque jour.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>
+            <h3 class="display">Repos, puis série suivante</h3>
+            <p>Un minuteur de repos démarre après chaque série. Touchez Série suivante pour noter la suivante, déjà préremplie, sans casser le rythme.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-flame"><svg class="icon"><use href="assets/icons.svg#flame"/></svg></span>
+            <h3 class="display">Gardez la série</h3>
+            <p>La carte Cette semaine compte vos séances et vos semaines d’affilée. Les statistiques ajoutent l’évolution du volume et une carte de régularité sur 18&nbsp;semaines.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>
+            <h3 class="display">Des widgets partout</h3>
+            <p>Votre semaine, votre série et la tendance de chaque exercice sur l’écran d’accueil et l’écran verrouillé. Touchez + pour noter directement.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display intro-title">De plus près</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/fr/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/fr/home-light.jpg" alt="L’écran Exercices avec les séances de la semaine, 27 semaines d’affilée et les derniers exercices" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Votre semaine en un coup d’œil</strong><span>Séries, séances et progrès pour chaque exercice</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/fr/log-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/fr/log-light.jpg" alt="La saisie préremplie avec la dernière série : 130 kg pour 5 répétitions" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Une série en quelques secondes</strong><span>Préremplie depuis la dernière fois, avec détection des records</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/fr/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/fr/detail-light.jpg" alt="Un squat à 130 kg × 5 marqué comme record personnel, avec son graphique de progression" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Voyez vos progrès</strong><span>Graphiques, 1RM estimé et tous vos records</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-green"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"/></svg></span>Confidentiel par conception</h2>
+          <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Sans compte ni inscription</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Ni publicité, ni analyse, ni suivi</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Fonctionne entièrement hors ligne</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Synchronisé via votre propre iCloud</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Export CSV quand vous le souhaitez</span></li>
+          </ul>
+          <p><a href="privacy-policy.html">Lire la politique de confidentialité →</a></p>
+        </div>
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-purple"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg></span>Fait pour vous</h2>
+          <p class="secondary">Kilos ou livres, clair ou sombre, et sept langues. L’app suit la langue de votre iPhone ou celle choisie dans les réglages, tout comme ses widgets.</p>
+          <div class="langs">
+              <span class="badge">English</span>
+              <span class="badge">Deutsch</span>
+              <span class="badge">Français</span>
+              <span class="badge">Українська</span>
+              <span class="badge">Español</span>
+              <span class="badge">日本語</span>
+              <span class="badge">Português</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card cta">
+          <picture>
+            <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/app-icon.png" alt="" width="76" height="76" loading="lazy">
+          </picture>
+          <h2 class="display">Commencez votre journal</h2>
+          <p>Training Tracker est disponible sur l’App Store pour iPhone. Nécessite iOS&nbsp;18.5 ou version ultérieure.</p>
+          <a class="btn" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Télécharger dans l’App Store</a>
+        </div>
+      </section>
+    </article>
+
+    <article lang="uk">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <picture>
+              <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+              <img class="hero-icon" src="assets/app-icon.png" alt="" width="84" height="84">
+            </picture>
+            <h1 class="display">Training Tracker</h1>
+            <p class="tagline">Яскравий і швидкий щоденник силових тренувань для iPhone. Записуйте підхід одним дотиком, святкуйте кожен особистий рекорд і дивіться, як росте кожна вправа.</p>
+            <div class="hero-actions">
+              <a class="btn light" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Завантажити в App Store</a>
+              <a class="btn glass" href="support.html">Підтримка</a>
+            </div>
+            <div class="hero-chips">
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#person"/></svg>Без облікового запису</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cloud"/></svg>Синхронізація iCloud</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#widgets"/></svg>Віджети</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>7 мов</span>
+            </div>
+          </div>
+          <div class="hero-shots">
+            <div class="phone front"><picture><source srcset="assets/screens/uk/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/uk/home-light.jpg" alt="Екран «Вправи» з тренуваннями цього тижня, серією у 27 тижнів і останніми вправами" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <div class="phone back" aria-hidden="true"><picture><source srcset="assets/screens/uk/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/uk/detail-light.jpg" alt="" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="intro">
+          <h2 class="display">Усе, що потрібно між підходами</h2>
+          <p>Training Tracker створено для залу: швидко записувати, легко читати й чесно показувати ваш прогрес.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="tile lg c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>
+            <h3 class="display">Підхід за секунди</h3>
+            <p>Кожен підхід починається з попереднього, тож повторити його — один дотик. Кроки дисків, готові повтори й перемикач власної ваги роблять будь-яку зміну швидкою.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>
+            <h3 class="display">Кожен рекорд — свято</h3>
+            <p>Нові рекорди ваги, оцінки 1ПМ чи повторів помітно ще під час введення, і їх відзначає конфеті. Рекорди сяють золотом.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-blue"><svg class="icon"><use href="assets/icons.svg#chart"/></svg></span>
+            <h3 class="display">Бачте свій прогрес</h3>
+            <p>Графіки ваги, оцінки 1ПМ, обʼєму й повторів — від тижня до всього часу. Проведіть пальцем, щоб подивитися будь-який день.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>
+            <h3 class="display">Відпочинок, потім наступний</h3>
+            <p>Після кожного підходу стартує таймер відпочинку. Торкніться «Наступний», щоб записати наступний підхід уже заповненим, і тренуйтеся без пауз на телефон.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-flame"><svg class="icon"><use href="assets/icons.svg#flame"/></svg></span>
+            <h3 class="display">Тримайте серію</h3>
+            <p>Картка «Цього тижня» рахує ваші тренування й тижні поспіль. Статистика додає динаміку обʼєму й карту регулярності за 18 тижнів.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>
+            <h3 class="display">Віджети всюди</h3>
+            <p>Ваш тиждень, серія та динаміка будь-якої вправи на початковому екрані й екрані блокування. Торкніться +, щоб одразу записати підхід.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display intro-title">Ближче</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/uk/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/uk/home-light.jpg" alt="Екран «Вправи» з тренуваннями цього тижня, серією у 27 тижнів і останніми вправами" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Ваш тиждень одним поглядом</strong><span>Серія, тренування та прогрес у кожній вправі</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/uk/log-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/uk/log-light.jpg" alt="Запис результату, заповнений останнім підходом: 130 кг на 5 повторів" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Підхід за секунди</strong><span>Заповнено з минулого разу, з перевіркою рекорду наживо</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/uk/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/uk/detail-light.jpg" alt="Присідання 130 кг × 5 — особистий рекорд, із графіком прогресу" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Бачте свій прогрес</strong><span>Графіки, оцінка 1ПМ і всі особисті рекорди</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-green"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"/></svg></span>Приватність за замовчуванням</h2>
+          <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Без облікового запису й реєстрації</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Без реклами, аналітики й стеження</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Повністю працює офлайн</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Синхронізація через ваш власний iCloud</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Експорт у CSV будь-коли</span></li>
+          </ul>
+          <p><a href="privacy-policy.html">Політика конфіденційності →</a></p>
+        </div>
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-purple"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg></span>Створено для вас</h2>
+          <p class="secondary">Кілограми чи фунти, світла чи темна тема і сім мов. Застосунок і його віджети говорять мовою вашого iPhone або тією, яку ви виберете в налаштуваннях.</p>
+          <div class="langs">
+              <span class="badge">English</span>
+              <span class="badge">Deutsch</span>
+              <span class="badge">Français</span>
+              <span class="badge">Українська</span>
+              <span class="badge">Español</span>
+              <span class="badge">日本語</span>
+              <span class="badge">Português</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card cta">
+          <picture>
+            <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/app-icon.png" alt="" width="76" height="76" loading="lazy">
+          </picture>
+          <h2 class="display">Почніть свій щоденник</h2>
+          <p>Training Tracker доступний в App Store для iPhone. Потрібна iOS 18.5 або новіша.</p>
+          <a class="btn" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Завантажити в App Store</a>
+        </div>
+      </section>
+    </article>
+
+    <article lang="es">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <picture>
+              <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+              <img class="hero-icon" src="assets/app-icon.png" alt="" width="84" height="84">
+            </picture>
+            <h1 class="display">Training Tracker</h1>
+            <p class="tagline">Un diario de fuerza rápido y con carácter para iPhone. Registra una serie con un toque, celebra cada récord personal y mira cómo crece cada ejercicio.</p>
+            <div class="hero-actions">
+              <a class="btn light" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Descargar en el App Store</a>
+              <a class="btn glass" href="support.html">Soporte</a>
+            </div>
+            <div class="hero-chips">
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#person"/></svg>Sin cuenta</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cloud"/></svg>Sincronización con iCloud</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#widgets"/></svg>Widgets</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>7 idiomas</span>
+            </div>
+          </div>
+          <div class="hero-shots">
+            <div class="phone front"><picture><source srcset="assets/screens/es/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/es/home-light.jpg" alt="La pantalla Ejercicios con las sesiones de esta semana, una racha de 27 semanas y los últimos ejercicios" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <div class="phone back" aria-hidden="true"><picture><source srcset="assets/screens/es/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/es/detail-light.jpg" alt="" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="intro">
+          <h2 class="display">Todo lo que pasa entre dos series</h2>
+          <p>Training Tracker está pensada para el gimnasio: rápida de registrar, clara de leer y sincera con tu progreso.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="tile lg c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>
+            <h3 class="display">Una serie en segundos</h3>
+            <p>Cada serie parte de la anterior, así que repetirla es un solo toque. Pasos de disco, repeticiones rápidas y el modo de peso corporal agilizan cualquier cambio.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>
+            <h3 class="display">Celebra cada récord</h3>
+            <p>Los nuevos récords de peso, 1RM estimado o repeticiones se detectan mientras escribes y se celebran con confeti. Los récords brillan en dorado.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-blue"><svg class="icon"><use href="assets/icons.svg#chart"/></svg></span>
+            <h3 class="display">Mira cómo mejoras</h3>
+            <p>Gráficos de peso, 1RM estimado, volumen y repeticiones, desde una semana hasta todo el historial. Desliza el dedo para ver cualquier día.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>
+            <h3 class="display">Descansa y a la siguiente</h3>
+            <p>Tras cada serie arranca un temporizador de descanso. Toca Siguiente serie para registrar la próxima ya rellenada y mantener el ritmo.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-flame"><svg class="icon"><use href="assets/icons.svg#flame"/></svg></span>
+            <h3 class="display">Mantén la racha</h3>
+            <p>La tarjeta Esta semana cuenta tus sesiones y tus semanas seguidas. Estadísticas añade la evolución del volumen y un mapa de constancia de 18 semanas.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>
+            <h3 class="display">Widgets en todas partes</h3>
+            <p>Tu semana, tu racha y la tendencia de cualquier ejercicio en la pantalla de inicio y la pantalla bloqueada. Toca + para registrar al instante.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display intro-title">Más de cerca</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/es/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/es/home-light.jpg" alt="La pantalla Ejercicios con las sesiones de esta semana, una racha de 27 semanas y los últimos ejercicios" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Tu semana de un vistazo</strong><span>Rachas, sesiones y progreso en cada ejercicio</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/es/log-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/es/log-light.jpg" alt="El registro rellenado con la última serie: 130 kg y 5 repeticiones" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Una serie en segundos</strong><span>Rellenada con la última vez y con detección de récords</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/es/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/es/detail-light.jpg" alt="Una sentadilla de 130 kg × 5 marcada como récord personal, con su gráfico de progreso" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Mira cómo mejoras</strong><span>Gráficos, 1RM estimado y todos tus récords</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-green"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"/></svg></span>Privada por diseño</h2>
+          <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Sin cuenta ni registro</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Sin anuncios, analíticas ni rastreo</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Funciona totalmente sin conexión</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Se sincroniza con tu propio iCloud</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Exporta a CSV cuando quieras</span></li>
+          </ul>
+          <p><a href="privacy-policy.html">Leer la política de privacidad →</a></p>
+        </div>
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-purple"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg></span>Hecha para ti</h2>
+          <p class="secondary">Kilos o libras, modo claro u oscuro y siete idiomas. La app sigue el idioma de tu iPhone o el que elijas en Ajustes, y sus widgets también.</p>
+          <div class="langs">
+              <span class="badge">English</span>
+              <span class="badge">Deutsch</span>
+              <span class="badge">Français</span>
+              <span class="badge">Українська</span>
+              <span class="badge">Español</span>
+              <span class="badge">日本語</span>
+              <span class="badge">Português</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card cta">
+          <picture>
+            <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/app-icon.png" alt="" width="76" height="76" loading="lazy">
+          </picture>
+          <h2 class="display">Empieza tu diario de entrenamiento</h2>
+          <p>Training Tracker está en el App Store para iPhone. Requiere iOS 18.5 o posterior.</p>
+          <a class="btn" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Descargar en el App Store</a>
+        </div>
+      </section>
+    </article>
+
+    <article lang="ja">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <picture>
+              <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+              <img class="hero-icon" src="assets/app-icon.png" alt="" width="84" height="84">
+            </picture>
+            <h1 class="display">Training Tracker</h1>
+            <p class="tagline">iPhoneのための、力強くて速い筋トレ記録アプリ。ワンタップでセットを記録し、自己ベストのたびにお祝いし、すべての種目の成長を見守りましょう。</p>
+            <div class="hero-actions">
+              <a class="btn light" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>App Storeからダウンロード</a>
+              <a class="btn glass" href="support.html">サポート</a>
+            </div>
+            <div class="hero-chips">
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#person"/></svg>アカウント不要</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cloud"/></svg>iCloud同期</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#widgets"/></svg>ウィジェット</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>7言語対応</span>
+            </div>
+          </div>
+          <div class="hero-shots">
+            <div class="phone front"><picture><source srcset="assets/screens/ja/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/ja/home-light.jpg" alt="今週のトレーニング回数、27週連続の記録、最近のエクササイズが表示されたエクササイズ画面" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <div class="phone back" aria-hidden="true"><picture><source srcset="assets/screens/ja/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/ja/detail-light.jpg" alt="" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="intro">
+          <h2 class="display">セットとセットのあいだに必要なすべて</h2>
+          <p>Training Trackerはジムで使うために作られています。すばやく記録でき、見やすく、進捗を正直に伝えます。</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="tile lg c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>
+            <h3 class="display">数秒でセットを記録</h3>
+            <p>前回のセットがあらかじめ入力されているので、同じセットならワンタップ。プレート単位の調整、回数のプリセット、自重の切り替えで、変更もすばやくできます。</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>
+            <h3 class="display">自己ベストをお祝い</h3>
+            <p>重量・推定1RM・回数の新記録は入力中に検出され、紙吹雪でお祝いします。自己ベストはゴールドで輝きます。</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-blue"><svg class="icon"><use href="assets/icons.svg#chart"/></svg></span>
+            <h3 class="display">成長が見える</h3>
+            <p>重量、推定1RM、ボリューム、回数のグラフを1週間から全期間まで表示。指でなぞればどの日の値も確認できます。</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>
+            <h3 class="display">休憩して、次のセットへ</h3>
+            <p>セットを記録するたびに休憩タイマーが始まります。「次のセット」をタップすれば、入力済みの状態で次のセットを記録でき、トレーニングのリズムを保てます。</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-flame"><svg class="icon"><use href="assets/icons.svg#flame"/></svg></span>
+            <h3 class="display">連続記録を伸ばそう</h3>
+            <p>「今週」カードがトレーニング回数と週の連続記録を数えます。統計ではボリュームの推移と18週間の継続マップも確認できます。</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>
+            <h3 class="display">どこでもウィジェット</h3>
+            <p>今週の状況、連続記録、各種目の推移をホーム画面とロック画面に。+をタップすればすぐに記録できます。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display intro-title">詳しく見る</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/ja/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/ja/home-light.jpg" alt="今週のトレーニング回数、27週連続の記録、最近のエクササイズが表示されたエクササイズ画面" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">今週がひと目でわかる</strong><span>連続記録、トレーニング回数、すべての種目の進捗</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/ja/log-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/ja/log-light.jpg" alt="前回のセット（130 kg・5回）が入力された記録画面" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">数秒でセットを記録</strong><span>前回の内容を入力済み、自己ベストもその場でチェック</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/ja/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/ja/detail-light.jpg" alt="自己ベストの130 kg × 5のスクワットと進捗グラフ" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">成長が見える</strong><span>グラフ、推定1RM、すべての自己ベスト</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-green"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"/></svg></span>プライバシーを第一に</h2>
+          <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>アカウントも登録も不要</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>広告・解析・トラッキングなし</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>完全にオフラインで動作</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>あなた自身のiCloudで同期</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>いつでもCSVに書き出し</span></li>
+          </ul>
+          <p><a href="privacy-policy.html">プライバシーポリシーを読む →</a></p>
+        </div>
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-purple"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg></span>あなたに合わせて</h2>
+          <p class="secondary">キログラムでもポンドでも、ライトでもダークでも、そして7つの言語で。アプリとウィジェットは、iPhoneの言語か設定で選んだ言語で表示されます。</p>
+          <div class="langs">
+              <span class="badge">English</span>
+              <span class="badge">Deutsch</span>
+              <span class="badge">Français</span>
+              <span class="badge">Українська</span>
+              <span class="badge">Español</span>
+              <span class="badge">日本語</span>
+              <span class="badge">Português</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card cta">
+          <picture>
+            <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/app-icon.png" alt="" width="76" height="76" loading="lazy">
+          </picture>
+          <h2 class="display">トレーニング記録を始めよう</h2>
+          <p>Training TrackerはiPhone向けにApp Storeで配信中です。iOS 18.5以降が必要です。</p>
+          <a class="btn" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>App Storeからダウンロード</a>
+        </div>
+      </section>
+    </article>
+
+    <article lang="pt">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <picture>
+              <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+              <img class="hero-icon" src="assets/app-icon.png" alt="" width="84" height="84">
+            </picture>
+            <h1 class="display">Training Tracker</h1>
+            <p class="tagline">Um diário de musculação rápido e marcante para iPhone. Registre uma série com um toque, comemore cada recorde pessoal e veja cada exercício evoluir.</p>
+            <div class="hero-actions">
+              <a class="btn light" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Baixar na App Store</a>
+              <a class="btn glass" href="support.html">Suporte</a>
+            </div>
+            <div class="hero-chips">
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#person"/></svg>Sem conta</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#cloud"/></svg>Sincronização com iCloud</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#widgets"/></svg>Widgets</span>
+            <span class="badge"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg>7 idiomas</span>
+            </div>
+          </div>
+          <div class="hero-shots">
+            <div class="phone front"><picture><source srcset="assets/screens/pt/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/pt/home-light.jpg" alt="A tela Exercícios com as sessões desta semana, uma sequência de 27 semanas e os últimos exercícios" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <div class="phone back" aria-hidden="true"><picture><source srcset="assets/screens/pt/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/pt/detail-light.jpg" alt="" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="intro">
+          <h2 class="display">Tudo o que acontece entre duas séries</h2>
+          <p>O Training Tracker foi feito para a academia: rápido de registrar, fácil de ler e sincero sobre o seu progresso.</p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="tile lg c-indigo"><svg class="icon"><use href="assets/icons.svg#barbell"/></svg></span>
+            <h3 class="display">Uma série em segundos</h3>
+            <p>Cada série parte da anterior, então repeti-la é só um toque. Passos de anilha, atalhos de repetições e o modo peso corporal deixam qualquer ajuste rápido.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-gold"><svg class="icon"><use href="assets/icons.svg#trophy"/></svg></span>
+            <h3 class="display">Comemore cada recorde</h3>
+            <p>Novos recordes de peso, 1RM estimado ou repetições são detectados enquanto você digita e comemorados com confete. Os recordes brilham em dourado.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-blue"><svg class="icon"><use href="assets/icons.svg#chart"/></svg></span>
+            <h3 class="display">Veja sua evolução</h3>
+            <p>Gráficos de peso, 1RM estimado, volume e repetições, de uma semana a todo o histórico. Arraste o dedo para ver qualquer dia.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-orange"><svg class="icon"><use href="assets/icons.svg#timer"/></svg></span>
+            <h3 class="display">Descanse e vá para a próxima</h3>
+            <p>Um timer de descanso começa depois de cada série. Toque em Próxima série para registrar a seguinte já preenchida e manter o ritmo.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-flame"><svg class="icon"><use href="assets/icons.svg#flame"/></svg></span>
+            <h3 class="display">Mantenha a sequência</h3>
+            <p>O cartão Esta semana conta suas sessões e suas semanas seguidas. As estatísticas mostram a evolução do volume e um mapa de consistência de 18 semanas.</p>
+          </div>
+          <div class="feature">
+            <span class="tile lg c-teal"><svg class="icon"><use href="assets/icons.svg#widgets"/></svg></span>
+            <h3 class="display">Widgets em todo lugar</h3>
+            <p>Sua semana, sua sequência e a tendência de qualquer exercício na Tela de Início e na Tela Bloqueada. Toque em + para registrar na hora.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title display intro-title">Veja de perto</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/pt/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/pt/home-light.jpg" alt="A tela Exercícios com as sessões desta semana, uma sequência de 27 semanas e os últimos exercícios" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Sua semana num relance</strong><span>Sequências, sessões e progresso em cada exercício</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/pt/log-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/pt/log-light.jpg" alt="O registro preenchido com a última série: 130 kg e 5 repetições" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Uma série em segundos</strong><span>Preenchida com a última vez e com checagem de recorde</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <div class="phone"><picture><source srcset="assets/screens/pt/detail-dark.jpg" media="(prefers-color-scheme: dark)"><img src="assets/screens/pt/detail-light.jpg" alt="Um agachamento de 130 kg × 5 marcado como recorde pessoal, com o gráfico de progresso" width="590" height="1282" loading="lazy" decoding="async"></picture></div>
+            <figcaption><strong class="display">Veja sua evolução</strong><span>Gráficos, 1RM estimado e todos os recordes</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-green"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"/></svg></span>Privado por natureza</h2>
+          <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Sem conta e sem cadastro</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Sem anúncios, análises ou rastreamento</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Funciona totalmente offline</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Sincroniza pelo seu próprio iCloud</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg><span>Exporte para CSV quando quiser</span></li>
+          </ul>
+          <p><a href="privacy-policy.html">Ler a Política de Privacidade →</a></p>
+        </div>
+        <div class="card">
+          <h2 class="section-title display"><span class="tile c-purple"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#globe"/></svg></span>Feito para você</h2>
+          <p class="secondary">Quilos ou libras, claro ou escuro e sete idiomas. O app segue o idioma do seu iPhone ou o que você escolher nos Ajustes, assim como os widgets.</p>
+          <div class="langs">
+              <span class="badge">English</span>
+              <span class="badge">Deutsch</span>
+              <span class="badge">Français</span>
+              <span class="badge">Українська</span>
+              <span class="badge">Español</span>
+              <span class="badge">日本語</span>
+              <span class="badge">Português</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="card cta">
+          <picture>
+            <source srcset="assets/app-icon-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="assets/app-icon.png" alt="" width="76" height="76" loading="lazy">
+          </picture>
+          <h2 class="display">Comece seu diário de treino</h2>
+          <p>O Training Tracker está na App Store para iPhone. Requer iOS 18.5 ou posterior.</p>
+          <a class="btn" href="https://apps.apple.com/app/id6752959007"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>Baixar na App Store</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <nav>
+        <a href="marketing.html" class="l10n"><span lang="en">Overview</span><span lang="de">Überblick</span><span lang="fr">Aperçu</span><span lang="uk">Огляд</span><span lang="es">Resumen</span><span lang="ja">概要</span><span lang="pt">Visão geral</span></a>
+        <a href="support.html" class="l10n"><span lang="en">Support</span><span lang="de">Support</span><span lang="fr">Assistance</span><span lang="uk">Підтримка</span><span lang="es">Soporte</span><span lang="ja">サポート</span><span lang="pt">Suporte</span></a>
+        <a href="privacy-policy.html" class="l10n"><span lang="en">Privacy Policy</span><span lang="de">Datenschutzerklärung</span><span lang="fr">Politique de confidentialité</span><span lang="uk">Політика конфіденційності</span><span lang="es">Política de privacidad</span><span lang="ja">プライバシーポリシー</span><span lang="pt">Política de Privacidade</span></a>
+        <a href="https://apps.apple.com/app/id6752959007">App Store</a>
+      </nav>
+      <span>© 2026 Volodymyr Sichka</span>
+    </div>
+  </footer>
+</body>
+</html>
